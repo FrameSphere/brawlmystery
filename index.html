@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Guess - Tägliches Rate-Spiel</title>
+    <meta name="description" content="Errate den Brawl Stars Charakter! Tägliche Herausforderungen in 4 verschiedenen Spielmodi.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect">
+            <option value="de">🇩🇪 DE</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="es">🇪🇸 ES</option>
+            <option value="fr">🇫🇷 FR</option>
+            <option value="it">🇮🇹 IT</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">Brawl Stars Guess</h1>
+        </header>
+
+        <!-- Daily Progress -->
+        <div class="daily-progress">
+            <div class="progress-item" data-mode="classic">
+                <div class="progress-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                </div>
+                <span data-i18n="mode.classic">Klassisch</span>
+            </div>
+            <div class="progress-item" data-mode="pixel">
+                <div class="progress-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                    </svg>
+                </div>
+                <span data-i18n="mode.pixel">Pixel</span>
+            </div>
+            <div class="progress-item" data-mode="emoji">
+                <div class="progress-icon">😊</div>
+                <span data-i18n="mode.emoji">Emoji</span>
+            </div>
+            <div class="progress-item" data-mode="description">
+                <div class="progress-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                </div>
+                <span data-i18n="mode.description">Beschreibung</span>
+            </div>
+        </div>
+
+        <!-- Game Content -->
+        <div class="game-content">
+            <!-- Classic Mode -->
+            <div class="game-mode active" id="classic-mode">
+                <div class="search-container">
+                    <input type="text" id="brawler-search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+                <div id="guesses" class="guesses-grid"></div>
+                <div id="result" class="result-message"></div>
+            </div>
+
+            <!-- Pixel Mode -->
+            <div class="game-mode" id="pixel-mode">
+                <div class="pixel-container">
+                    <canvas id="pixel-canvas" class="pixel-canvas"></canvas>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="pixel-search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
+                    <div id="pixel-results" class="search-results"></div>
+                </div>
+                <div id="pixel-guesses" class="guesses-list"></div>
+                <div id="pixel-result" class="result-message"></div>
+            </div>
+
+            <!-- Emoji Mode -->
+            <div class="game-mode" id="emoji-mode">
+                <div class="emoji-container">
+                    <div id="emoji-display" class="emoji-display"></div>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="emoji-search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
+                    <div id="emoji-results" class="search-results"></div>
+                </div>
+                <div id="emoji-guesses" class="guesses-list"></div>
+                <div id="emoji-result" class="result-message"></div>
+            </div>
+
+            <!-- Description Mode -->
+            <div class="game-mode" id="description-mode">
+                <div class="description-container">
+                    <div id="description-text" class="description-text"></div>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="description-search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
+                    <div id="description-results" class="search-results"></div>
+                </div>
+                <div id="description-guesses" class="guesses-list"></div>
+                <div id="description-result" class="result-message"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="impressum.html" class="footer-link" data-i18n="imprint">Impressum</a>
+            <span class="footer-separator">·</span>
+            <a href="datenschutz.html" class="footer-link" data-i18n="privacy">Datenschutz</a>
+        </footer>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/brawlers.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

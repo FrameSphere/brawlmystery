@@ -1,0 +1,32 @@
+# Brawl Stars Guess - Ignorierte Dateien
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Node modules (falls später verwendet)
+node_modules/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Log files
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# Build directories (falls später verwendet)
+dist/
+build/
+
+# Temporäre Dateien
+*.tmp
+*.temp
