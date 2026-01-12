@@ -22,7 +22,7 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <h1 class="title">Brawl Stars Guess</h1>
+            <h1 class="title">Brawl Mystery</h1>
         </header>
 
         <!-- Daily Progress -->
@@ -71,8 +71,8 @@
             <!-- Classic Mode -->
             <div class="game-mode active" id="classic-mode">
                 <div class="search-container">
-                    <input type="text" id="brawler-search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
-                    <div id="search-results" class="search-results"></div>
+                    <input type="text" id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Suche Brawler...">
+                    <div id="results" class="search-results"></div>
                 </div>
                 <div id="guesses" class="guesses-grid"></div>
                 <div id="result" class="result-message"></div>
@@ -127,7 +127,9 @@
     </div>
 
     <script src="js/translations.js"></script>
+    <script src="js/brawler-names.js"></script>
     <script src="js/brawlers.js"></script>
+    <script src="js/play-limit.js"></script>
     <script src="js/game.js"></script>
     <script src="js/main.js"></script>
 </body>

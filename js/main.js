@@ -1,8 +1,14 @@
 // Main application logic
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Clean up old data first
+    playLimitManager.cleanupOldData();
+    
     // Initialize language
     initializeLanguage();
+    
+    // Update play limit indicators
+    playLimitManager.updateModeIndicators();
     
     // Initialize first game (classic mode)
     switchMode('classic');
@@ -12,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Update daily progress on load
     updateDailyProgressOnLoad();
+    
+    // Update cooldown indicators every minute
+    setInterval(() => {
+        playLimitManager.updateModeIndicators();
+    }, 60000); // Update every minute
 });
 
 // Language Management
@@ -29,6 +40,9 @@ function initializeLanguage() {
                 const mode = currentGame.mode;
                 switchMode(mode);
             }
+            
+            // Update indicators with new language
+            playLimitManager.updateModeIndicators();
         });
     }
     
@@ -42,12 +56,25 @@ function setupModeButtons() {
     progressItems.forEach(item => {
         item.addEventListener('click', () => {
             const mode = item.getAttribute('data-mode');
+            
+            // Check if mode is locked
+            if (!playLimitManager.canPlayMode(mode)) {
+                playLimitManager.showCooldownMessage(mode);
+                return;
+            }
+            
             switchMode(mode);
         });
     });
 }
 
 function switchMode(mode) {
+    // Check if mode is available
+    if (!playLimitManager.canPlayMode(mode)) {
+        playLimitManager.showCooldownMessage(mode);
+        return;
+    }
+    
     // Update progress item states
     document.querySelectorAll('.progress-item').forEach(item => {
         item.classList.remove('active');
