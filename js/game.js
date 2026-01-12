@@ -236,9 +236,9 @@ class BrawlStarsGame {
             canvas.width = 400;
             canvas.height = 400;
             
-            // Start with 80 pixels (very blocky), decrease by 10 each attempt
-            // After 8 attempts: 80 - (8*10) = 0 (fully clear)
-            const pixelSize = Math.max(1, 80 - (this.attempts * 10));
+            // Start with only ~6 pixels (400/65 ≈ 6 pixels), gradually decrease to clear
+            // attempts 0: 65 pixels (~6x6 grid), attempts 8: 1 pixel (fully clear)
+            const pixelSize = Math.max(1, 65 - (this.attempts * 8));
             
             const w = canvas.width / pixelSize;
             const h = canvas.height / pixelSize;
