@@ -426,7 +426,7 @@ body {
 
 /* Play Again Button */
 .play-again-btn {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 12px 24px;
     background: linear-gradient(135deg, #9b59b6 0%, #e74c3c 100%);
     border: none;
@@ -437,6 +437,9 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .play-again-btn:hover {
