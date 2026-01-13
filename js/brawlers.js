@@ -81,20 +81,20 @@ const brawlers = [
     { id: 68, name: 'Doug', rarity: 'Mythic', role: 'Support', range: 'Medium', speed: 'Normal', health: 'Medium', releaseYear: 2023, image: 'images/brawlers/doug.png' },
     { id: 69, name: 'Chuck', rarity: 'Mythic', role: 'Damage Dealer', range: 'Medium', speed: 'Fast', health: 'Medium', releaseYear: 2023, image: 'images/brawlers/chuck.jpg' },
     { id: 70, name: 'Charlie', rarity: 'Mythic', role: 'Controller', range: 'Medium', speed: 'Fast', health: 'Medium', releaseYear: 2023, image: 'images/brawlers/charlie.png' },
-    { id: 71, name: 'Mico', rarity: 'Mythic', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Low', releaseYear: 2023, image: 'images/brawlers/Mico.png' }, //neu
-    { id: 72, name: 'Lily', rarity: 'Mythic', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Low', releaseYear: 2024, image: 'images/brawlers/Lily.png' }, //neu
-    { id: 73, name: 'Ollie', rarity: 'Mythic', role: 'Tank', range: 'Short', speed: 'Normal', health: 'High', releaseYear: 2024, image: 'images/brawlers/Ollie.png' }, //neu
-    { id: 74, name: 'Melodie', rarity: 'Mythic', role: 'Assassin', range: 'Very High', speed: 'Normal', health: 'High', releaseYear: 2024, image: 'images/brawlers/Melodie.png' }, //neu
-    { id: 75, name: 'Clancy', rarity: 'Mythic', role: 'Damage Dealer', range: 'High', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Clancy.png' }, //neu
-    { id: 76, name: 'Moe', rarity: 'Mythic', role: 'Damage Dealer', range: 'High', speed: 'High', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Moe.png' }, //neu
-    { id: 77, name: 'Juju', rarity: 'Mythic', role: 'Artillery', range: 'Low', speed: 'Normal', health: 'Low', releaseYear: 2024, image: 'images/brawlers/Juju.png' }, //neu
-    { id: 78, name: 'Lumi', rarity: 'Mythic', role: 'Damage Dealer', range: 'Very High', speed: 'Normal', health: 'Very Low', releaseYear: 2025, image: 'images/brawlers/Lumi.png' },
-    { id: 79, name: 'Finx', rarity: 'Mythic', role: 'Controller', range: 'Very High', speed: 'High', health: 'High', releaseYear: 2025, image: 'images/brawlers/Finx.png' },
-    { id: 80, name: 'Jae-Yong',rarity: 'Mythic', role: 'Support', range: 'Very High', speed: 'High', health: 'Medium', releaseYear: 2025, image: 'images/brawlers/Jae-Yong.png' },
-    { id: 81, name: 'Alli', rarity: 'Mythic', role: 'Assassin', range: 'Very Low',  speed: 'High', health: 'Very High',releaseYear: 2025, image: 'images/brawlers/Alli.png' },
-    { id: 82, name: 'Mina', rarity: 'Mythic', role: 'Damage Dealer', range: 'Very High', speed: 'High', health: 'Medium', releaseYear: 2025, image: 'images/brawlers/Mina.png' },
-    { id: 83, name: 'Ziggy', rarity: 'Mythic', role: 'Controller', range: 'Medium', speed: 'High', health: 'Low', releaseYear: 2025, image: 'images/brawlers/Ziggy.png' },
-    { id: 84, name: 'Gigi', rarity: 'Mythic', role: 'Assassin', range: 'Very Low',  speed: 'Very High',health: 'Very High',releaseYear: 2025, image: 'images/brawlers/Gigi.png' },
+    { id: 71, name: 'Mico', rarity: 'Mythic', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Low', releaseYear: 2023, image: 'images/brawlers/mico.png' }, //neu
+    { id: 72, name: 'Lily', rarity: 'Mythic', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Low', releaseYear: 2024, image: 'images/brawlers/lily.png' }, //neu
+    { id: 73, name: 'Ollie', rarity: 'Mythic', role: 'Tank', range: 'Short', speed: 'Normal', health: 'High', releaseYear: 2024, image: 'images/brawlers/ollie.png' }, //neu
+    { id: 74, name: 'Melodie', rarity: 'Mythic', role: 'Assassin', range: 'Very High', speed: 'Normal', health: 'High', releaseYear: 2024, image: 'images/brawlers/melodie.png' }, //neu
+    { id: 75, name: 'Clancy', rarity: 'Mythic', role: 'Damage Dealer', range: 'High', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/clancy.png' }, //neu
+    { id: 76, name: 'Moe', rarity: 'Mythic', role: 'Damage Dealer', range: 'High', speed: 'High', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/moe.png' }, //neu
+    { id: 77, name: 'Juju', rarity: 'Mythic', role: 'Artillery', range: 'Low', speed: 'Normal', health: 'Low', releaseYear: 2024, image: 'images/brawlers/juju.png' }, //neu
+    { id: 78, name: 'Lumi', rarity: 'Mythic', role: 'Damage Dealer', range: 'Very High', speed: 'Normal', health: 'Very Low', releaseYear: 2025, image: 'images/brawlers/lumi.png' },
+    { id: 79, name: 'Finx', rarity: 'Mythic', role: 'Controller', range: 'Very High', speed: 'High', health: 'High', releaseYear: 2025, image: 'images/brawlers/finx.png' },
+    { id: 80, name: 'Jae-Yong',rarity: 'Mythic', role: 'Support', range: 'Very High', speed: 'High', health: 'Medium', releaseYear: 2025, image: 'images/brawlers/jae-yong.png' },
+    { id: 81, name: 'Alli', rarity: 'Mythic', role: 'Assassin', range: 'Very Low',  speed: 'High', health: 'Very High',releaseYear: 2025, image: 'images/brawlers/alli.png' },
+    { id: 82, name: 'Mina', rarity: 'Mythic', role: 'Damage Dealer', range: 'Very High', speed: 'High', health: 'Medium', releaseYear: 2025, image: 'images/brawlers/mina.png' },
+    { id: 83, name: 'Ziggy', rarity: 'Mythic', role: 'Controller', range: 'Medium', speed: 'High', health: 'Low', releaseYear: 2025, image: 'images/brawlers/ziggy.png' },
+    { id: 84, name: 'Gigi', rarity: 'Mythic', role: 'Assassin', range: 'Very Low',  speed: 'Very High',health: 'Very High',releaseYear: 2025, image: 'images/brawlers/gigi.png' },
             
     // Legendary Brawlers
     { id: 85, name: 'Spike', rarity: 'Legendary', role: 'Damage Dealer', range: 'Medium', speed: 'Normal', health: 'Low', releaseYear: 2017, image: 'images/brawlers/spike.jpg' },
@@ -106,13 +106,13 @@ const brawlers = [
     { id: 91, name: 'Surge', rarity: 'Legendary', role: 'Damage Dealer', range: 'Long', speed: 'Normal', health: 'Medium', releaseYear: 2020, image: 'images/brawlers/surge.jpg' },
     { id: 92, name: 'Chester', rarity: 'Legendary', role: 'Damage Dealer', range: 'Long', speed: 'Fast', health: 'Medium', releaseYear: 2022, image: 'images/brawlers/chester.png' },
     { id: 93, name: 'Cordelius', rarity: 'Legendary', role: 'Assassin', range: 'Medium', speed: 'Fast', health: 'Medium', releaseYear: 2023, image: 'images/brawlers/cordelius.png' },
-    { id: 94, name: 'Kit', rarity: 'Legendary', role: 'Support', range: 'Medium', speed: 'Schnell', health: 'High', releaseYear: 2023, image: 'images/brawlers/Kit.png' }, //neu
-    { id: 95, name: 'Draco', rarity: 'Legendary', role: 'Tank', range: 'Short',  speed: 'Normal', health: 'Very High', releaseYear: 2024, image: 'images/brawlers/Draco.png' }, //neu
-    { id: 96, name: 'Kenji', rarity: 'Legendary', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Kenji.png' }, //neu
-    { id: 97, name: 'Pierce', rarity: 'Legendary', role: 'Marksman', range: 'Long', speed: 'Normal', health: 'Low', releaseYear: 2024, image: 'images/brawlers/Pierce.png' }, //neu
+    { id: 94, name: 'Kit', rarity: 'Legendary', role: 'Support', range: 'Medium', speed: 'Schnell', health: 'High', releaseYear: 2023, image: 'images/brawlers/kit.png' }, //neu
+    { id: 95, name: 'Draco', rarity: 'Legendary', role: 'Tank', range: 'Short',  speed: 'Normal', health: 'Very High', releaseYear: 2024, image: 'images/brawlers/draco.png' }, //neu
+    { id: 96, name: 'Kenji', rarity: 'Legendary', role: 'Assassin', range: 'Short', speed: 'Sehr schnell', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/kenji.png' }, //neu
+    { id: 97, name: 'Pierce', rarity: 'Legendary', role: 'Marksman', range: 'Long', speed: 'Normal', health: 'Low', releaseYear: 2024, image: 'images/brawlers/pierce.png' }, //neu
     
     // Ultra Legendary Brawlers
-    { id: 98, name: 'Kaze', rarity: 'ultralegendary',    role: 'Assassin',   range: 'Short',  speed: 'Sehr schnell', health: 'Low',    releaseYear: 2024, image: 'images/brawlers/Kaze.png' }, //neu
+    { id: 98, name: 'Kaze', rarity: 'ultralegendary',    role: 'Assassin',   range: 'Short',  speed: 'Sehr schnell', health: 'Low',    releaseYear: 2024, image: 'images/brawlers/kaze.png' }, //neu
 ];
 
 // Stat comparison values for higher/lower logic
