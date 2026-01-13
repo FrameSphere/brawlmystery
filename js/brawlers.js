@@ -52,11 +52,11 @@ const brawlers = [
     { id: 41, name: 'Hank', rarity: 'Epic', role: 'Tank', range: 'Short', speed: 'Normal', health: 'Very High', releaseYear: 2023, image: 'images/brawlers/hank.png' },
     { id: 42, name: 'Pearl', rarity: 'Epic', role: 'Damage Dealer', range: 'Medium', speed: 'Normal', health: 'Medium', releaseYear: 2023, image: 'images/brawlers/pearl.png' },
     { id: 43, name: 'Larry&Lawrie', rarity: 'Epic', role: 'Artillery', range: 'Long', speed: 'Schnell', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Larry&Lawrie.png' },
-    { id: 44, name: 'Angelo', rarity: 'Epic', role: 'Marksman', range: 'Long', speed: 'Sehr schnell', health: 'Low', releaseYear: 2024, image: 'images/brawlers/Angelo.png' }, //neu
-    { id: 45, name: 'Berry', rarity: 'Epic', role: 'Support', range: 'Long', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Berrie.png' }, //neu
-    { id: 46, name: 'Shade', rarity: 'Epic', role: 'Assassin', range: 'Short', speed: 'Schnell', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Shade.png' }, //neu
-    { id: 47, name: 'Meeple', rarity: 'Epic', role: 'Controller', range: 'Medium', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/Meeple.png' }, //neu
-    { id: 48, name: 'Trunk', rarity: 'Epic', role: 'Tank', range: 'Short', speed: 'Langsam', health: 'High', releaseYear: 2024, image: 'images/brawlers/Trunk.png' }, //neu
+    { id: 44, name: 'Angelo', rarity: 'Epic', role: 'Marksman', range: 'Long', speed: 'Sehr schnell', health: 'Low', releaseYear: 2024, image: 'images/brawlers/angelo.png' }, //neu
+    { id: 45, name: 'Berry', rarity: 'Epic', role: 'Support', range: 'Long', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/berrie.png' }, //neu
+    { id: 46, name: 'Shade', rarity: 'Epic', role: 'Assassin', range: 'Short', speed: 'Schnell', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/shade.png' }, //neu
+    { id: 47, name: 'Meeple', rarity: 'Epic', role: 'Controller', range: 'Medium', speed: 'Normal', health: 'Medium', releaseYear: 2024, image: 'images/brawlers/meeple.png' }, //neu
+    { id: 48, name: 'Trunk', rarity: 'Epic', role: 'Tank', range: 'Short', speed: 'Langsam', health: 'High', releaseYear: 2024, image: 'images/brawlers/trunk.png' }, //neu
 
     // Mythic Brawlers
     { id: 49, name: 'Mortis', rarity: 'Mythic', role: 'Assassin', range: 'Short', speed: 'Very Fast', health: 'Medium', releaseYear: 2017, image: 'images/brawlers/mortis.jpg' },
