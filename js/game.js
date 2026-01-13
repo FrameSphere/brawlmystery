@@ -644,10 +644,10 @@ class BrawlStarsGame {
         
         if (this.won) {
             resultEl.className = 'result-message success';
-            resultEl.textContent = `${t('correct')} ${this.dailyBrawler.name}!`;
+            resultEl.innerHTML = `${t('correct')} ${this.dailyBrawler.name}!`;
         } else {
             resultEl.className = 'result-message failure';
-            resultEl.textContent = `${t('wrong')} ${this.dailyBrawler.name}.`;
+            resultEl.innerHTML = `${t('wrong')} ${this.dailyBrawler.name}.`;
         }
     }
     
