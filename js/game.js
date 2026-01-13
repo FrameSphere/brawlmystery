@@ -669,7 +669,8 @@ class BrawlStarsGame {
             btn.textContent = `${t('playAgain')} (${remaining}/${this.maxGamesPerMode})`;
             btn.onclick = () => {
                 if (this.resetCurrentGame()) {
-                    location.reload();
+                    // Don't reload page - just reinitialize in current mode
+                    // The resetCurrentGame already does everything needed
                 }
             };
             resultEl.appendChild(btn);
