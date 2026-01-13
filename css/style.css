@@ -7,23 +7,8 @@
     box-sizing: border-box;
 }
 
-/* Custom Fonts */
-@font-face {
-    font-family: 'HeadlineFont';
-    src: url('../fonts/headline-font.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TextFont';
-    src: url('../fonts/text-font.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'TextFont', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     background: url('../images/background.jpg') center center fixed;
     background-size: cover;
     color: #ffffff;
@@ -51,7 +36,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     outline: none;
-    font-family: 'TextFont', sans-serif;
 }
 
 /* ============================================
@@ -76,14 +60,15 @@ body {
 }
 
 .title {
-    font-family: 'HeadlineFont', 'Bangers', cursive;
+    font-family: 'Impact', 'Arial Black', sans-serif;
     font-size: 2.5em;
-    font-weight: normal;
+    font-weight: 900;
     color: #ffd700;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 
                  0 0 20px rgba(255, 215, 0, 0.5);
     margin: 0;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* ============================================
@@ -176,7 +161,6 @@ body {
     color: #ffffff;
     font-size: 1em;
     outline: none;
-    font-family: 'TextFont', sans-serif;
 }
 
 .search-container input:focus {
@@ -253,7 +237,6 @@ body {
     font-size: 0.75em;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'HeadlineFont', sans-serif;
 }
 
 .guess-cell {
@@ -453,7 +436,6 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'HeadlineFont', sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
