@@ -38,9 +38,29 @@
                     <span class="modal-close">&times;</span>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-icon">🔒</div>
+                    <div class="modal-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
                     <h2 class="modal-title" id="modal-title">Modus gesperrt</h2>
                     <p class="modal-text" id="modal-text"></p>
+                    <div class="modal-actions">
+                        <button class="modal-btn watch-ad-btn" id="watch-ad-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <span data-i18n="modal.watchAd">Werbung anschauen</span>
+                        </button>
+                        <button class="modal-btn unlock-all-btn" id="unlock-all-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                            </svg>
+                            <span data-i18n="modal.unlockAll">Alles freischalten</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

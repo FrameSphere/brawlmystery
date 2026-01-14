@@ -24,6 +24,10 @@ const translations = {
             speed: 'Geschwindigkeit',
             health: 'Gesundheit',
             releaseYear: 'Jahr'
+        },
+        modal: {
+            watchAd: 'Werbung anschauen',
+            unlockAll: 'Alles freischalten'
         }
     },
     en: {
@@ -48,6 +52,10 @@ const translations = {
             speed: 'Speed',
             health: 'Health',
             releaseYear: 'Year'
+        },
+        modal: {
+            watchAd: 'Watch Ad',
+            unlockAll: 'Unlock All'
         }
     },
     es: {
@@ -72,6 +80,10 @@ const translations = {
             speed: 'Velocidad',
             health: 'Salud',
             releaseYear: 'Año'
+        },
+        modal: {
+            watchAd: 'Ver Anuncio',
+            unlockAll: 'Desbloquear Todo'
         }
     },
     fr: {
@@ -96,6 +108,10 @@ const translations = {
             speed: 'Vitesse',
             health: 'Santé',
             releaseYear: 'Année'
+        },
+        modal: {
+            watchAd: 'Regarder Publicité',
+            unlockAll: 'Débloquer Tout'
         }
     },
     it: {
@@ -120,6 +136,10 @@ const translations = {
             speed: 'Velocità',
             health: 'Salute',
             releaseYear: 'Anno'
+        },
+        modal: {
+            watchAd: 'Guarda Pubblicità',
+            unlockAll: 'Sblocca Tutto'
         }
     }
 };

@@ -159,6 +159,25 @@ class PlayLimitManager {
         }
     }
     
+    // Unlock all modes (test function)
+    unlockAllModes() {
+        const modes = ['classic', 'pixel', 'emoji', 'description'];
+        
+        modes.forEach(mode => {
+            // Remove cooldown
+            localStorage.removeItem(this.getCooldownKey(mode));
+            
+            // Reset play count
+            const key = this.getPlayLimitKey(mode);
+            localStorage.removeItem(key);
+        });
+        
+        // Update UI
+        this.updateModeIndicators();
+        
+        console.log('All modes unlocked!');
+    }
+    
     updateModeIndicators() {
         const modes = ['classic', 'pixel', 'emoji', 'description'];
         
@@ -234,3 +253,41 @@ class PlayLimitManager {
 
 // Global instance
 const playLimitManager = new PlayLimitManager();
+
+// Setup modal buttons
+document.addEventListener('DOMContentLoaded', () => {
+    const watchAdBtn = document.getElementById('watch-ad-btn');
+    const unlockAllBtn = document.getElementById('unlock-all-btn');
+    
+    if (watchAdBtn) {
+        watchAdBtn.addEventListener('click', () => {
+            console.log('Watch ad clicked - implement ad integration here');
+            // TODO: Integrate actual ad system (AdSense, etc.)
+            alert('Werbung wird geladen... (noch nicht implementiert)');
+        });
+    }
+    
+    if (unlockAllBtn) {
+        unlockAllBtn.addEventListener('click', () => {
+            // For testing: unlock all modes
+            playLimitManager.unlockAllModes();
+            
+            // Close modal
+            const modal = document.getElementById('cooldown-modal');
+            if (modal) {
+                modal.classList.remove('show');
+            }
+            
+            // Show success message
+            const lang = getCurrentLanguage();
+            const messages = {
+                de: 'Alle Modi wurden freigeschaltet!',
+                en: 'All modes unlocked!',
+                fr: 'Tous les modes déverrouillés!',
+                es: '¡Todos los modos desbloqueados!',
+                it: 'Tutte le modalità sbloccate!'
+            };
+            alert(messages[lang] || messages['en']);
+        });
+    }
+});
