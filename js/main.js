@@ -118,3 +118,50 @@ function updateDailyProgressOnLoad() {
         }
     });
 }
+
+// Modal Functions
+function showModal(title, message) {
+    const modal = document.getElementById('cooldown-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalText = document.getElementById('modal-text');
+    
+    if (modal && modalTitle && modalText) {
+        modalTitle.textContent = title;
+        modalText.textContent = message;
+        modal.classList.add('show');
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('cooldown-modal');
+    if (modal) {
+        modal.classList.remove('show');
+    }
+}
+
+// Setup modal close handlers on DOMContentLoaded
+window.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('cooldown-modal');
+    const closeBtn = document.querySelector('.modal-close');
+    
+    // Close on X button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    // Close on outside click
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+});

@@ -116,8 +116,16 @@ class PlayLimitManager {
         
         const lang = getCurrentLanguage();
         let message = '';
+        let title = '';
         
         if (this.isInCooldown(mode)) {
+            const titles = {
+                de: 'Modus gesperrt',
+                en: 'Mode Locked',
+                fr: 'Mode verrouillé',
+                es: 'Modo bloqueado',
+                it: 'Modalità bloccata'
+            };
             const messages = {
                 de: `Dieser Modus ist gesperrt. ${cooldownText}`,
                 en: `This mode is locked. ${cooldownText}`,
@@ -125,8 +133,16 @@ class PlayLimitManager {
                 es: `Este modo está bloqueado. ${cooldownText}`,
                 it: `Questa modalità è bloccata. ${cooldownText}`
             };
+            title = titles[lang] || titles['en'];
             message = messages[lang] || messages['en'];
         } else if (remainingPlays === 0) {
+            const titles = {
+                de: 'Keine Spiele mehr',
+                en: 'No Games Left',
+                fr: 'Plus de jeux',
+                es: 'Sin juegos',
+                it: 'Nessun gioco rimasto'
+            };
             const messages = {
                 de: 'Du hast alle Versuche für heute aufgebraucht. Warte 12 Stunden.',
                 en: 'You\'ve used all attempts for today. Wait 12 hours.',
@@ -134,11 +150,12 @@ class PlayLimitManager {
                 es: 'Has usado todos los intentos de hoy. Espera 12 horas.',
                 it: 'Hai esaurito tutti i tentativi di oggi. Attendi 12 ore.'
             };
+            title = titles[lang] || titles['en'];
             message = messages[lang] || messages['en'];
         }
         
         if (message) {
-            alert(message);
+            showModal(title, message);
         }
     }
     

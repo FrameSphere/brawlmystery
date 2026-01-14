@@ -105,6 +105,14 @@ class BrawlStarsGame {
             return false;
         }
         
+        // Clear result message
+        const prefix = this.mode === 'classic' ? '' : `${this.mode}-`;
+        const resultEl = document.getElementById(`${prefix}result`);
+        if (resultEl) {
+            resultEl.innerHTML = '';
+            resultEl.className = 'result-message';
+        }
+        
         // Clear current game state
         localStorage.removeItem(this.getStorageKey());
         
