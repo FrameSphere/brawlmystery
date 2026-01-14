@@ -473,13 +473,13 @@ body {
 }
 
 .wait-message {
-    margin-top: 15px;
     padding: 12px;
     background: rgba(138, 43, 226, 0.2);
     border: 2px solid rgba(138, 43, 226, 0.5);
     border-radius: 10px;
     font-size: 1rem; /* 16px */
     color: #bb86fc;
+    margin-left: 1.5rem;
 }
 
 /* ============================================
