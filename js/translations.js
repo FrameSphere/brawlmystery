@@ -28,6 +28,17 @@ const translations = {
         modal: {
             watchAd: 'Werbung anschauen',
             unlockAll: 'Alles freischalten'
+        },
+        modes: {
+            title: 'Tägliche Herausforderungen',
+            description: 'Wähle einen der 4 Spielmodi und errate den geheimen Brawler!'
+        },
+        about: {
+            link: 'Über Brawl Mystery',
+            title: 'Über Brawl Mystery',
+            description: 'Brawl Mystery ist ein tägliches Brawl Stars Guess Game, bei dem Spieler geheime Brawler erraten müssen. Das Quiz bietet mehrere Spielmodi, tägliche Herausforderungen und richtet sich an echte Brawl Stars Fans.',
+            modesTitle: 'Unsere Spielmodi:',
+            daily: 'Jeden Tag wartet eine neue Brawl Stars Herausforderung auf dich. Teste dein Wissen und werde zum ultimativen Brawl Stars Experten!'
         }
     },
     en: {
@@ -56,6 +67,17 @@ const translations = {
         modal: {
             watchAd: 'Watch Ad',
             unlockAll: 'Unlock All'
+        },
+        modes: {
+            title: 'Daily Challenges',
+            description: 'Choose one of 4 game modes and guess the secret Brawler!'
+        },
+        about: {
+            link: 'About Brawl Mystery',
+            title: 'About Brawl Mystery',
+            description: 'Brawl Mystery is a daily Brawl Stars Guess Game where players guess secret Brawlers. The quiz offers multiple game modes, daily challenges and is designed for true Brawl Stars fans.',
+            modesTitle: 'Our Game Modes:',
+            daily: 'Every day a new Brawl Stars challenge awaits you. Test your knowledge and become the ultimate Brawl Stars expert!'
         }
     },
     es: {
@@ -84,6 +106,17 @@ const translations = {
         modal: {
             watchAd: 'Ver Anuncio',
             unlockAll: 'Desbloquear Todo'
+        },
+        modes: {
+            title: 'Desafíos diarios',
+            description: '¡Elige uno de los 4 modos de juego y adivina el Brawler secreto!'
+        },
+        about: {
+            link: 'Acerca de Brawl Mystery',
+            title: 'Acerca de Brawl Mystery',
+            description: 'Brawl Mystery es un juego de adivinanzas diario de Brawl Stars donde los jugadores adivinan Brawlers secretos. El quiz ofrece múltiples modos de juego, desafíos diarios y está diseñado para verdaderos fans de Brawl Stars.',
+            modesTitle: 'Nuestros modos de juego:',
+            daily: '¡Cada día te espera un nuevo desafío de Brawl Stars! Pon a prueba tus conocimientos y conviértete en el experto definitivo de Brawl Stars!'
         }
     },
     fr: {
@@ -112,6 +145,17 @@ const translations = {
         modal: {
             watchAd: 'Regarder Publicité',
             unlockAll: 'Débloquer Tout'
+        },
+        modes: {
+            title: 'Défis quotidiens',
+            description: 'Choisissez l\'un des 4 modes de jeu et devinez le Brawler secret!'
+        },
+        about: {
+            link: 'À propos de Brawl Mystery',
+            title: 'À propos de Brawl Mystery',
+            description: 'Brawl Mystery est un jeu de devinettes quotidien Brawl Stars où les joueurs devinent des Brawlers secrets. Le quiz propose plusieurs modes de jeu, des défis quotidiens et est conçu pour les vrais fans de Brawl Stars.',
+            modesTitle: 'Nos modes de jeu:',
+            daily: 'Chaque jour, un nouveau défi Brawl Stars vous attend. Testez vos connaissances et devenez l\'expert ultime de Brawl Stars!'
         }
     },
     it: {
@@ -140,6 +184,17 @@ const translations = {
         modal: {
             watchAd: 'Guarda Pubblicità',
             unlockAll: 'Sblocca Tutto'
+        },
+        modes: {
+            title: 'Sfide quotidiane',
+            description: 'Scegli una delle 4 modalità di gioco e indovina il Brawler segreto!'
+        },
+        about: {
+            link: 'Informazioni su Brawl Mystery',
+            title: 'Informazioni su Brawl Mystery',
+            description: 'Brawl Mystery è un gioco di indovinelli quotidiano di Brawl Stars in cui i giocatori indovinano Brawler segreti. Il quiz offre più modalità di gioco, sfide quotidiane ed è progettato per i veri fan di Brawl Stars.',
+            modesTitle: 'Le nostre modalità di gioco:',
+            daily: 'Ogni giorno ti aspetta una nuova sfida di Brawl Stars. Metti alla prova le tue conoscenze e diventa l\'esperto definitivo di Brawl Stars!'
         }
     }
 };

@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brawl Stars Guess - Tägliches Rate-Spiel</title>
-    <meta name="description" content="Errate den Brawl Stars Charakter! Tägliche Herausforderungen in 4 verschiedenen Spielmodi.">
+    <title>Brawl Mystery – Tägliches Brawl Stars Guess Game | 4 Quiz Modi</title>
+    <meta name="description" content="Errate täglich geheime Brawl Stars Brawler! 4 spannende Spielmodi: Klassisch, Pixel, Emoji & Beschreibung. Kostenloses Brawl Stars Quiz für echte Fans.">
+    <meta name="keywords" content="Brawl Stars, Brawl Stars Quiz, Brawler erraten, Guess Game, Brawl Mystery, tägliche Herausforderung, Brawl Stars Spiel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Brawl Mystery - Tägliches Brawl Stars Guess Game">
+    <meta property="og:description" content="Errate täglich geheime Brawler in 4 verschiedenen Modi. Kostenloses Quiz für Brawl Stars Fans!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brawlmystery.pages.dev/">
+    <meta property="og:site_name" content="Brawl Mystery">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brawl Mystery - Brawl Stars Guess Game">
+    <meta name="twitter:description" content="Errate täglich geheime Brawler in 4 verschiedenen Quiz-Modi!">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brawlmystery.pages.dev/">
     
     <!--Google adSense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005"
@@ -69,7 +85,46 @@
             </div>
         </div>
 
+        <!-- About Modal -->
+        <div id="about-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-close" onclick="closeAboutModal()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </div>
+                    <h2 class="modal-title" data-i18n="about.title">Über Brawl Mystery</h2>
+                    <div class="modal-text about-content">
+                        <p data-i18n="about.description">
+                            Brawl Mystery ist ein tägliches <strong>Brawl Stars Guess Game</strong>, bei dem Spieler geheime <strong>Brawler erraten</strong> müssen. Das <strong>Quiz</strong> bietet mehrere Spielmodi, tägliche Herausforderungen und richtet sich an echte <strong>Brawl Stars Fans</strong>.
+                        </p>
+                        <h3 data-i18n="about.modesTitle">Unsere Spielmodi:</h3>
+                        <ul class="about-list">
+                            <li><strong>Klassisch:</strong> Errate den Brawler anhand seiner Eigenschaften</li>
+                            <li><strong>Pixel:</strong> Erkenne den Brawler im verpixelten Bild</li>
+                            <li><strong>Emoji:</strong> Finde heraus, welcher Brawler sich hinter den Emojis versteckt</li>
+                            <li><strong>Beschreibung:</strong> Rate den Brawler anhand seiner Charakterbeschreibung</li>
+                        </ul>
+                        <p data-i18n="about.daily">
+                            Jeden Tag wartet eine neue <strong>Brawl Stars Herausforderung</strong> auf dich. Teste dein Wissen und werde zum ultimativen Brawl Stars Experten!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Daily Progress -->
+        <section class="game-modes-section">
+            <h2 class="section-title" data-i18n="modes.title">Tägliche Herausforderungen</h2>
+            <p class="section-description" data-i18n="modes.description">Wähle einen der 4 Spielmodi und errate den geheimen Brawler!</p>
+        </section>
+        
         <div class="daily-progress">
             <div class="progress-item" data-mode="classic">
                 <div class="progress-icon">
@@ -164,6 +219,8 @@
 
         <!-- Footer -->
         <footer class="footer">
+            <a href="#" class="footer-link" data-i18n="about.link" onclick="openAboutModal(); return false;">Über Brawl Mystery</a>
+            <span class="footer-separator">·</span>
             <a href="impressum.html" class="footer-link" data-i18n="imprint">Impressum</a>
             <span class="footer-separator">·</span>
             <a href="datenschutz.html" class="footer-link" data-i18n="privacy">Datenschutz</a>
@@ -176,5 +233,24 @@
     <script src="js/play-limit.js" defer></script>
     <script src="js/game.js" defer></script>
     <script src="js/main.js" defer></script>
+    
+    <!-- About Modal Script -->
+    <script>
+        function openAboutModal() {
+            document.getElementById('about-modal').style.display = 'flex';
+        }
+        
+        function closeAboutModal() {
+            document.getElementById('about-modal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('about-modal');
+            if (event.target === modal) {
+                closeAboutModal();
+            }
+        });
+    </script>
 </body>
 </html>
