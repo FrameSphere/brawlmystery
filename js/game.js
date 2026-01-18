@@ -37,6 +37,7 @@ class BrawlStarsGame {
             if (now - games.lastReset < 12 * 60 * 60 * 1000) {
                 // Still within 12 hour window
                 this.dailyBrawler = brawlers.find(b => b.id === data.brawlerId);
+                console.log(`[DEBUG] ${this.mode} mode: Loaded existing Brawler = ${this.dailyBrawler.name} (ID: ${this.dailyBrawler.id})`);
                 return;
             }
         }
@@ -55,6 +56,9 @@ class BrawlStarsGame {
             played: 0,
             lastReset: Date.now()
         }));
+        
+        // Debug: Log selected brawler for this mode
+        console.log(`[DEBUG] ${this.mode} mode: Selected Brawler = ${this.dailyBrawler.name} (ID: ${this.dailyBrawler.id})`);
     }
     
     getRandomBrawler() {
