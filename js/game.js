@@ -39,6 +39,10 @@ class BrawlStarsGame {
                 this.dailyBrawler = brawlers.find(b => b.id === data.brawlerId);
                 console.log(`[DEBUG] ${this.mode} mode: Loaded existing Brawler = ${this.dailyBrawler.name} (ID: ${this.dailyBrawler.id})`);
                 return;
+            } else {
+                // 12 hours have passed - clear old game state
+                console.log(`[DEBUG] ${this.mode} mode: 12 hours passed, clearing old state`);
+                localStorage.removeItem(this.getStorageKey());
             }
         }
         
@@ -56,6 +60,9 @@ class BrawlStarsGame {
             played: 0,
             lastReset: Date.now()
         }));
+        
+        // Clear old game state for this mode
+        localStorage.removeItem(this.getStorageKey());
         
         // Debug: Log selected brawler for this mode
         console.log(`[DEBUG] ${this.mode} mode: Selected Brawler = ${this.dailyBrawler.name} (ID: ${this.dailyBrawler.id})`);
@@ -151,6 +158,16 @@ class BrawlStarsGame {
         const saved = localStorage.getItem(this.getStorageKey());
         if (saved) {
             const state = JSON.parse(saved);
+            
+            // Verify that the saved state belongs to the current brawler
+            if (state.brawlerId && state.brawlerId !== this.dailyBrawler.id) {
+                console.log(`[DEBUG] ${this.mode} mode: Saved state belongs to different brawler (${state.brawlerId} vs ${this.dailyBrawler.id}), clearing it`);
+                localStorage.removeItem(this.getStorageKey());
+                this.emojiRevealed = 1;
+                this.revealedWordIndices = [];
+                return;
+            }
+            
             this.attempts = state.attempts;
             this.guesses = state.guesses;
             this.gameOver = state.gameOver;
@@ -165,6 +182,7 @@ class BrawlStarsGame {
     
     saveGameState() {
         const state = {
+            brawlerId: this.dailyBrawler.id, // Add brawler ID to verify state belongs to current brawler
             attempts: this.attempts,
             guesses: this.guesses,
             gameOver: this.gameOver,
