@@ -43,10 +43,30 @@ function initializeLanguage() {
             
             // Update indicators with new language
             playLimitManager.updateModeIndicators();
+            
+            // Update about modal content
+            updateAboutModalContent();
         });
     }
     
     updatePageLanguage();
+    updateAboutModalContent();
+}
+
+// Update About Modal Content
+function updateAboutModalContent() {
+    const aboutList = document.querySelector('.about-list');
+    if (!aboutList) return;
+    
+    const lang = getCurrentLanguage();
+    const trans = translations[lang];
+    
+    aboutList.innerHTML = `
+        <li><strong>${trans.mode.classic}:</strong> ${trans.about.classicDesc}</li>
+        <li><strong>${trans.mode.pixel}:</strong> ${trans.about.pixelDesc}</li>
+        <li><strong>${trans.mode.emoji}:</strong> ${trans.about.emojiDesc}</li>
+        <li><strong>${trans.mode.description}:</strong> ${trans.about.descriptionDesc}</li>
+    `;
 }
 
 // Mode Management
