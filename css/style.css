@@ -290,12 +290,12 @@ body {
 
 .guess-cell.higher::after {
     content: '↑';
-    color: #ef4444;
+    color: #3b82f6;
 }
 
 .guess-cell.lower::after {
     content: '↓';
-    color: #3b82f6;
+    color: #ef4444;
 }
 
 .guess-brawler-image {
@@ -704,6 +704,7 @@ body {
     
     .guess-header,
     .guess-row {
+        grid-template-columns: 60px repeat(6, 1fr);
         gap: 3px;
     }
     
@@ -734,6 +735,11 @@ body {
 @media (max-width: 480px) {
     .title {
         font-size: 1.625rem; /* 26px */
+    }
+    
+    .guess-header,
+    .guess-row {
+        grid-template-columns: 50px repeat(6, 1fr);
     }
     
     .guess-header-cell {
