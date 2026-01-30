@@ -31,7 +31,7 @@ const brawlers = [
     { id: 20, name: 'Bo', rarity: 'Epic', role: 'Controller', range: 'Long', speed: 'Normal', health: 'Medium', releaseYear: 2017, image: 'images/brawlers/bo.png' },
     { id: 21, name: 'Emz', rarity: 'Epic', role: 'Controller', range: 'Medium', speed: 'Normal', health: 'Medium', releaseYear: 2019, image: 'images/brawlers/emz.png' },
     { id: 22, name: 'Stu', rarity: 'Epic', role: 'Assassin', range: 'Medium', speed: 'Very Fast', health: 'Low', releaseYear: 2021, image: 'images/brawlers/stu.jpg' },
-    { id: 23, name: 'Piper', rarity: 'Epic', role: 'Marksman', range: 'Very Long', speed: 'Normal', health: 'Low', releaseYear: 2017, image: 'images/brawlers/piper.jpg' },
+    { id: 23, name: 'Piper', rarity: 'Epic', role: 'Marksman', range: 'Very Long', speed: 'Normal', health: 'Low', releaseYear: 2017, image: 'images/brawlers/piper.png' },
     { id: 24, name: 'Pam', rarity: 'Epic', role: 'Support', range: 'Medium', speed: 'Normal', health: 'Very High', releaseYear: 2017, image: 'images/brawlers/pam.png' },
     { id: 25, name: 'Frank', rarity: 'Epic', role: 'Tank', range: 'Medium', speed: 'Slow', health: 'Very High', releaseYear: 2018, image: 'images/brawlers/frank.png' },
     { id: 26, name: 'Bibi', rarity: 'Epic', role: 'Tank', range: 'Short', speed: 'Very Fast', health: 'High', releaseYear: 2019, image: 'images/brawlers/bibi.png' },
