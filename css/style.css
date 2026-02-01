@@ -31,6 +31,8 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     font-size: 16px; /* Base font size */
+    width: 100%;
+    position: relative;
 }
 
 /* ============================================
@@ -685,6 +687,16 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .title {
         font-size: 2rem; /* 32px */
     }
@@ -699,24 +711,33 @@ body {
     }
     
     .game-content {
-        padding: 15px;
+        padding: 15px 10px;
+    }
+    
+    .guesses-grid {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
     }
     
     .guess-header,
     .guess-row {
         grid-template-columns: 60px repeat(6, 1fr);
         gap: 3px;
+        min-width: fit-content;
     }
     
     .guess-header-cell {
         font-size: 0.6875rem; /* 11px */
         padding: 5px 2px;
+        white-space: nowrap;
     }
     
     .guess-cell {
         font-size: 0.75rem; /* 12px */
         padding: 6px 2px;
         min-height: 45px;
+        word-break: break-word;
     }
     
     .guess-brawler-image {
@@ -733,28 +754,38 @@ body {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+    
     .title {
         font-size: 1.625rem; /* 26px */
+    }
+    
+    .game-content {
+        padding: 10px 5px;
     }
     
     .guess-header,
     .guess-row {
         grid-template-columns: 50px repeat(6, 1fr);
+        gap: 2px;
     }
     
     .guess-header-cell {
         font-size: 0.625rem; /* 10px */
-        padding: 4px 2px;
+        padding: 4px 1px;
     }
     
     .guess-cell {
         font-size: 0.6875rem; /* 11px */
-        padding: 5px 2px;
+        padding: 5px 1px;
         min-height: 40px;
     }
     
     .guess-brawler-image {
         min-height: 40px;
+        padding: 3px;
     }
     
     .guess-brawler-image img {
