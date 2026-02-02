@@ -33,6 +33,16 @@ const translations = {
             title: 'Tägliche Herausforderungen',
             description: 'Wähle einen der 4 Spielmodi und errate den geheimen Brawler!'
         },
+        library: {
+            title: 'Brawler Library',
+            backToGame: 'Zurück zum Spiel',
+            searchPlaceholder: 'Suche nach Brawlern...',
+            filterByRarity: 'Nach Seltenheit filtern:',
+            filterByRole: 'Nach Rolle filtern:',
+            allRarities: 'Alle',
+            allRoles: 'Alle',
+            noResults: 'Keine Brawler gefunden'
+        },
         about: {
             link: 'Über Brawl Mystery',
             title: 'Über Brawl Mystery',
@@ -75,6 +85,16 @@ const translations = {
         modes: {
             title: 'Daily Challenges',
             description: 'Choose one of 4 game modes and guess the secret Brawler!'
+        },
+        library: {
+            title: 'Brawler Library',
+            backToGame: 'Back to Game',
+            searchPlaceholder: 'Search for Brawlers...',
+            filterByRarity: 'Filter by rarity:',
+            filterByRole: 'Filter by role:',
+            allRarities: 'All',
+            allRoles: 'All',
+            noResults: 'No Brawlers found'
         },
         about: {
             link: 'About Brawl Mystery',
@@ -119,6 +139,16 @@ const translations = {
             title: 'Desafíos diarios',
             description: '¡Elige uno de los 4 modos de juego y adivina el Brawler secreto!'
         },
+        library: {
+            title: 'Biblioteca de Brawlers',
+            backToGame: 'Volver al juego',
+            searchPlaceholder: 'Buscar Brawlers...',
+            filterByRarity: 'Filtrar por rareza:',
+            filterByRole: 'Filtrar por rol:',
+            allRarities: 'Todos',
+            allRoles: 'Todos',
+            noResults: 'No se encontraron Brawlers'
+        },
         about: {
             link: 'Acerca de Brawl Mystery',
             title: 'Acerca de Brawl Mystery',
@@ -162,6 +192,16 @@ const translations = {
             title: 'Défis quotidiens',
             description: 'Choisissez l\'un des 4 modes de jeu et devinez le Brawler secret!'
         },
+        library: {
+            title: 'Bibliothèque de Brawlers',
+            backToGame: 'Retour au jeu',
+            searchPlaceholder: 'Rechercher des Brawlers...',
+            filterByRarity: 'Filtrer par rareté:',
+            filterByRole: 'Filtrer par rôle:',
+            allRarities: 'Tous',
+            allRoles: 'Tous',
+            noResults: 'Aucun Brawler trouvé'
+        },
         about: {
             link: 'À propos de Brawl Mystery',
             title: 'À propos de Brawl Mystery',
@@ -204,6 +244,16 @@ const translations = {
         modes: {
             title: 'Sfide quotidiane',
             description: 'Scegli una delle 4 modalità di gioco e indovina il Brawler segreto!'
+        },
+        library: {
+            title: 'Libreria Brawler',
+            backToGame: 'Torna al gioco',
+            searchPlaceholder: 'Cerca Brawler...',
+            filterByRarity: 'Filtra per rarità:',
+            filterByRole: 'Filtra per ruolo:',
+            allRarities: 'Tutti',
+            allRoles: 'Tutti',
+            noResults: 'Nessun Brawler trovato'
         },
         about: {
             link: 'Informazioni su Brawl Mystery',
