@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
+Allow: /library.html
+Allow: /impressum.html
+Allow: /datenschutz.html
 
 # Disallow admin or private directories if any exist
 # Disallow: /admin/
+
+# Crawl-delay (optional, prevents server overload)
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://brawlmystery.pages.dev/sitemap.xml

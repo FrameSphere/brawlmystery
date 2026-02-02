@@ -16,7 +16,8 @@
 /robots.txt   /robots.txt        200
 /sitemap.xml  /sitemap.xml       200
 
-# ---- Legal Pages
+# ---- HTML Pages (must be before SPA fallback!)
+/library.html       /library.html        200
 /impressum.html     /impressum.html      200
 /datenschutz.html   /datenschutz.html    200
 
