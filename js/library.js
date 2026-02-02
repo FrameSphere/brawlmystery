@@ -1,4 +1,6 @@
 // Library Page JavaScript
+// Note: getCurrentLanguage, setLanguage, updatePageLanguage, and getDescription
+// are already defined in translations.js
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {

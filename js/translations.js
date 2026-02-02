@@ -34,6 +34,7 @@ const translations = {
             description: 'Wähle einen der 4 Spielmodi und errate den geheimen Brawler!'
         },
         library: {
+            link: 'Brawler Library',
             title: 'Brawler Library',
             backToGame: 'Zurück zum Spiel',
             searchPlaceholder: 'Suche nach Brawlern...',
@@ -87,6 +88,7 @@ const translations = {
             description: 'Choose one of 4 game modes and guess the secret Brawler!'
         },
         library: {
+            link: 'Brawler Library',
             title: 'Brawler Library',
             backToGame: 'Back to Game',
             searchPlaceholder: 'Search for Brawlers...',
@@ -140,6 +142,7 @@ const translations = {
             description: '¡Elige uno de los 4 modos de juego y adivina el Brawler secreto!'
         },
         library: {
+            link: 'Biblioteca de Brawlers',
             title: 'Biblioteca de Brawlers',
             backToGame: 'Volver al juego',
             searchPlaceholder: 'Buscar Brawlers...',
@@ -193,6 +196,7 @@ const translations = {
             description: 'Choisissez l\'un des 4 modes de jeu et devinez le Brawler secret!'
         },
         library: {
+            link: 'Bibliothèque de Brawlers',
             title: 'Bibliothèque de Brawlers',
             backToGame: 'Retour au jeu',
             searchPlaceholder: 'Rechercher des Brawlers...',
@@ -246,6 +250,7 @@ const translations = {
             description: 'Scegli una delle 4 modalità di gioco e indovina il Brawler segreto!'
         },
         library: {
+            link: 'Libreria Brawler',
             title: 'Libreria Brawler',
             backToGame: 'Torna al gioco',
             searchPlaceholder: 'Cerca Brawler...',
