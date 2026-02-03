@@ -46,8 +46,8 @@ function filterBrawlers() {
     
     return allBrawlers.filter(brawler => {
         // Search filter
-        const translatedName = (brawlerNames[currentLang] && brawlerNames[currentLang][brawler.name]) 
-            ? brawlerNames[currentLang][brawler.name].toLowerCase() 
+        const translatedName = (brawlerNameTranslations[brawler.name] && brawlerNameTranslations[brawler.name][currentLang]) 
+            ? brawlerNameTranslations[brawler.name][currentLang].toLowerCase() 
             : brawler.name.toLowerCase();
         const matchesSearch = translatedName.includes(searchTerm) || brawler.name.toLowerCase().includes(searchTerm);
         
@@ -81,8 +81,8 @@ function renderBrawlers(brawlersToRender) {
 }
 
 function createBrawlerCard(brawler, lang) {
-    const translatedName = (brawlerNames[lang] && brawlerNames[lang][brawler.name]) 
-        ? brawlerNames[lang][brawler.name] 
+    const translatedName = (brawlerNameTranslations[brawler.name] && brawlerNameTranslations[brawler.name][lang]) 
+        ? brawlerNameTranslations[brawler.name][lang] 
         : brawler.name;
     
     const description = getDescription(brawler.name);
