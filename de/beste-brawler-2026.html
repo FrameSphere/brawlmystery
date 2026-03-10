@@ -29,11 +29,28 @@
             padding: 14px 0;
         }
         .brawler-entry:last-child { border-bottom: none; }
+        .brawler-entry-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+        .brawler-img {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: rgba(138,43,226,0.12);
+            border: 1px solid rgba(138,43,226,0.3);
+            flex-shrink: 0;
+            filter: drop-shadow(0 2px 10px rgba(138,43,226,0.35));
+        }
+        .brawler-entry-info { flex: 1; min-width: 0; }
         .brawler-entry-title {
             color: var(--text-primary);
             font-weight: 600;
             font-size: 0.95rem;
-            margin-bottom: 6px;
+            margin-bottom: 0;
         }
         .brawler-entry p { margin: 0; }
     </style>
@@ -82,56 +99,104 @@
             <h2>S-Tier – Die stärksten Brawler</h2>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Sirius – 100. Brawler, Ultra Legendär</div>
+                <div class="brawler-entry-header">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Sirius – 100. Brawler, Ultra Legendär</div>
+                    </div>
+                </div>
                 <p>Der neue Meilenstein-Brawler. Sirius sammelt "Schatten" gefallener Gegner und beschwört sie mit seiner Super. Im richtigen Moment können 3 Schatten eine komplette Team-Wende erzwingen. Besonders stark in zielbasierten Modi. Im Brawl Mystery Quiz: dunkel/schwarz-lila Farbpalette, Erscheinungsjahr 2026, Ultra Legendär.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Amber – Flächenkontrolle</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/amber.png" alt="Amber">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Amber – Flächenkontrolle</div>
+                    </div>
+                </div>
                 <p>Amber ist seit Jahren eine der stärksten Legendären. Ihre Feuerlinien kontrollieren große Kartenbereiche und zwingen Gegner zur Bewegung. Schwer zu kontern ohne direkten Konter-Pick. Im Quiz: orange/rotes Design, Legendär, 2020.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Cordelius – Duel-Meister</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/cordelius.png" alt="Cordelius">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-s">S-Tier</span> Cordelius – Duel-Meister</div>
+                    </div>
+                </div>
                 <p>Cordelius' Super isoliert einen Gegner in einer Schattenrealm – 1-gegen-1 ohne Hilfe der Verbündeten. Er entscheidet Teamkämpfe durch gezielte Elimination von Schlüsselspielern. Im Quiz: Pilz-Fähigkeiten, Legendär, 2023.</p>
             </div>
 
             <h2>A-Tier – Sehr starke Brawler</h2>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Najia – Neue Mythische Gift-Dealerin (2026)</div>
+                <div class="brawler-entry-header">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Najia – Neue Mythische Gift-Dealerin (2026)</div>
+                    </div>
+                </div>
                 <p>Frisch hinzugekommen: Najia schleudert vergiftende Schlangen und erzeugt anhaltenden Gift-Schaden. Gegen hohe HP-Brawler extrem effektiv. Ihr Gadget füllt wichtige Kartenzonen mit Gift-Pools. Im Quiz: sandfarben, Mythisch, 2026.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Sandy – Unsichtbarer Kontrolleur</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/sandy.png" alt="Sandy">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Sandy – Unsichtbarer Kontrolleur</div>
+                    </div>
+                </div>
                 <p>Sandy schläft im Kampf und macht sein Team unsichtbar mit seiner Super – eine der stärksten Teamfähigkeiten im Spiel. In Gem Grab und Hot Zone unersetzlich. Im Quiz: blau/hellbraun, Legendär, 2019, Kontrolleur.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Tara – Vielseitige Kontrolle</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/tara.jpg" alt="Tara">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Tara – Vielseitige Kontrolle</div>
+                    </div>
+                </div>
                 <p>Taras Super (schwarzes Loch) saugt alle Gegner in der Nähe an – perfekt für Teamkämpfe. Mit ihrer zweiten Stärke (Geist-Support) ist sie in vielen Modi spielbar. Im Quiz: lila/dunkel, Mythisch, Kontrolleurin, 2017.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Max – Geschwindigkeit als Waffe</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/max.jpg" alt="Max">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Max – Geschwindigkeit als Waffe</div>
+                    </div>
+                </div>
                 <p>Max gibt mit ihrer Super dem Team einen Geschwindigkeitsboost – das ändert komplette Teamkämpfe. Ihre Angriffe sind schnell und haben gute Reichweite. Im Quiz: pink/lila, Mythisch, Support, 2019.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Buzz – Tank mit Haken</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/buzz.png" alt="Buzz">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-a">A-Tier</span> Buzz – Tank mit Haken</div>
+                    </div>
+                </div>
                 <p>Buzz's Super wirft einen Haken zu Gegnern – perfekte Initiierung für Teams. Kombiniert mit hoher HP ist er ein bedrohlicher Front-Liner. Im Quiz: blau/türkis, Episch, 2021.</p>
             </div>
 
             <h2>B-Tier – Situationsbedingt stark</h2>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-b">B-Tier</span> Piper – Scharfschützen-Klassiker</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/piper.png" alt="Piper">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-b">B-Tier</span> Piper – Scharfschützen-Klassiker</div>
+                    </div>
+                </div>
                 <p>Piper ist auf offenen Karten verheerend – aus maximaler Reichweite macht sie gigantischen Schaden. Auf engen Karten fällt sie ab. Im Quiz: hellviolett/rosa, Episch, Scharfschütze, 2017.</p>
             </div>
 
             <div class="brawler-entry">
-                <div class="brawler-entry-title"><span class="tier-badge tier-b">B-Tier</span> Leon – Unsichtbarer Assassin</div>
+                <div class="brawler-entry-header">
+                    <img class="brawler-img" src="../images/brawlers/leon.jpg" alt="Leon">
+                    <div class="brawler-entry-info">
+                        <div class="brawler-entry-title"><span class="tier-badge tier-b">B-Tier</span> Leon – Unsichtbarer Assassin</div>
+                    </div>
+                </div>
                 <p>Leons Super macht ihn unsichtbar – perfekt für Überraschungsangriffe. Seit dem Buffie-System hat er an Konstanz gewonnen. Im Quiz: grün/blaugrün, Legendär, Attentäter, 2018.</p>
             </div>
 

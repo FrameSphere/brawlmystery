@@ -19,18 +19,36 @@
             border-radius: 12px;
             padding: 16px 18px;
             margin-bottom: 14px;
+            transition: border-color 0.2s;
         }
+        .brawler-card:hover { border-color: rgba(138,43,226,0.45); }
+        .brawler-card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+        .brawler-img {
+            width: 76px;
+            height: 76px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: rgba(138,43,226,0.12);
+            border: 1px solid rgba(138,43,226,0.3);
+            flex-shrink: 0;
+            filter: drop-shadow(0 2px 10px rgba(138,43,226,0.35));
+        }
+        .brawler-card-info { flex: 1; min-width: 0; }
         .brawler-card-name {
             color: var(--accent);
             font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
         .brawler-card-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-            margin-bottom: 8px;
         }
         .tag {
             background: rgba(255,215,0,0.1);
@@ -91,62 +109,112 @@
             <h2>Top 10 Brawler für Anfänger</h2>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">1. Shelly – Der klassische Einstieg</div>
-                <div class="brawler-card-tags"><span class="tag">Starter</span><span class="tag">Schadensverursacher</span><span class="tag">Kurze Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/shelly.jpg" alt="Shelly">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">1. Shelly – Der klassische Einstieg</div>
+                        <div class="brawler-card-tags"><span class="tag">Starter</span><span class="tag">Schadensverursacher</span><span class="tag">Kurze Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Shelly ist kein Zufall der erste Brawler – sie ist ideal für Einsteiger. Ihr Schrotflintenschuss trifft auch ohne perfektes Zielen, und ihre Super (Schildstoß) ist einfach zu aktivieren. Perfekt zum Verstehen der Grundmechaniken.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">2. Colt – Präzision lernen</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/colt.png" alt="Colt">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">2. Colt – Präzision lernen</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Colt ist ideal, um das Zielen zu üben. Seine Kugeln fliegen in einer geraden Linie – wer trifft, macht ordentlich Schaden. Mit der Zeit entwickelt man durch Colt das nötige Aiming-Gefühl für das gesamte Spiel.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">3. Nita – Teamplay lernen</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/nita.png" alt="Nita">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">3. Nita – Teamplay lernen</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Nita ruft mit ihrer Super einen Bären herbei, der automatisch auf Gegner zuläuft. Das lehrt, wie wichtig Positionierung und Teamunterstützung sind, ohne selbst komplizierte Mechaniken meistern zu müssen.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">4. Bull – Für aggressive Spieler</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Tank</span><span class="tag">Kurze Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/bull.png" alt="Bull">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">4. Bull – Für aggressive Spieler</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Tank</span><span class="tag">Kurze Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Bull hat viele Lebenspunkte und macht im Nahkampf enormen Schaden. Sein einfaches Spielprinzip (näherkommen und schießen) und die hohe Fehlertoleranz machen ihn perfekt für Neulinge, die aggressiv spielen wollen.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">5. Brock – Fernkampf & Explosionen</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Artillerie</span><span class="tag">Lange Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/brock.png" alt="Brock">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">5. Brock – Fernkampf & Explosionen</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Artillerie</span><span class="tag">Lange Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Brock ist der klassische Fernkämpfer. Seine Raketen sind langsam genug, um sie zu verstehen, und seine Super räumt ganze Büsche und Wände ab – das lehrt, wie Karten-Kontrolle funktioniert.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">6. El Primo – Nahkampf-Meister</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Tank</span><span class="tag">Kurze Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/el-primo.jpg" alt="El Primo">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">6. El Primo – Nahkampf-Meister</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Tank</span><span class="tag">Kurze Reichweite</span></div>
+                    </div>
+                </div>
                 <p>El Primo springt mit seiner Super direkt auf Gegner drauf – wer das meistert, versteht, wie man Gegner überrascht und überrannt. Mit vielen HP und starkem Flächenangriff ist er sehr fehlerverzeihend.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">7. Poco – Support kennenlernen</div>
-                <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Unterstützung</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/poco.png" alt="Poco">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">7. Poco – Support kennenlernen</div>
+                        <div class="brawler-card-tags"><span class="tag">Selten</span><span class="tag">Unterstützung</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Poco heilt seine Verbündeten – das ist im Team extrem wertvoll und einfach zu spielen. Als Einsteiger lernt man durch Poco, wie wichtig Teamrollen sind und wann Heilen mehr wert ist als Schaden.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">8. Jessie – Strukturen aufbauen</div>
-                <div class="brawler-card-tags"><span class="tag">Superselten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/jessie.png" alt="Jessie">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">8. Jessie – Strukturen aufbauen</div>
+                        <div class="brawler-card-tags"><span class="tag">Superselten</span><span class="tag">Schadensverursacher</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Jessie platziert mit ihrer Super ein Geschütz, das automatisch schießt. Das lehrt strategisches Denken: Wo stelle ich mein Geschütz auf? Ihr Schuss prallt von Wänden ab – das eröffnet kreative Spielzüge.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">9. Pam – Heilstation für Teams</div>
-                <div class="brawler-card-tags"><span class="tag">Episch</span><span class="tag">Unterstützung</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/pam.png" alt="Pam">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">9. Pam – Heilstation für Teams</div>
+                        <div class="brawler-card-tags"><span class="tag">Episch</span><span class="tag">Unterstützung</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Pam hat viele LP, macht ordentlich Schaden mit ihrem Schrapnellschuss und ihre Super (Heilstation) ist im Team-Modus Gold wert. Wer Pam gut spielt, versteht Karten-Kontrolle und Positionierung.</p>
             </div>
 
             <div class="brawler-card">
-                <div class="brawler-card-name">10. Bo – Fallen und Kontrolle</div>
-                <div class="brawler-card-tags"><span class="tag">Episch</span><span class="tag">Kontrolleur</span><span class="tag">Mittlere Reichweite</span></div>
+                <div class="brawler-card-header">
+                    <img class="brawler-img" src="../images/brawlers/bo.png" alt="Bo">
+                    <div class="brawler-card-info">
+                        <div class="brawler-card-name">10. Bo – Fallen und Kontrolle</div>
+                        <div class="brawler-card-tags"><span class="tag">Episch</span><span class="tag">Kontrolleur</span><span class="tag">Mittlere Reichweite</span></div>
+                    </div>
+                </div>
                 <p>Bo ist der perfekte Kontrolleur für Einsteiger. Seine Minen (Super) lehren, Zonen zu kontrollieren, und sein 3-Pfeil-Angriff ist einfach zu landen. In vielen Modi sehr nützlich.</p>
             </div>
 
