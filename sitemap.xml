@@ -185,6 +185,616 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/guide.html"/>
   </url>
 
+  <!-- DE – Content pages -->
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/beste-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/brawl-stars-update</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/neuer-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/neuer-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/classic-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/pixel-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/emoji-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/description-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/de/strategien/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/strategien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/estrategias/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/strategie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/strategies/"/>
+  </url>
+
+  <!-- EN – Content pages -->
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/best-brawlers-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/best-brawlers-for-beginners</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/brawl-stars-update</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/new-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/neuer-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/classic-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/pixel-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/emoji-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/description-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/en/strategies/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/strategien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/estrategias/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/strategie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/strategies/"/>
+  </url>
+
+  <!-- FR – Content pages -->
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/best-brawlers-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/brawl-stars-update</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/new-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/neuer-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/classic-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/pixel-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/emoji-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/description-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/fr/strategies/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/strategien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/estrategias/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/strategie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/strategies/"/>
+  </url>
+
+  <!-- ES – Content pages -->
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/best-brawlers-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/best-brawlers-for-beginners</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/brawl-stars-update</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/new-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/neuer-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/classic-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/pixel-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/emoji-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/description-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/es/estrategias/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/strategien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/estrategias/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/strategie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/strategies/"/>
+  </url>
+
+  <!-- IT – Content pages -->
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/best-brawlers-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/best-brawlers-for-beginners</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/beste-brawler-fuer-anfaenger"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/best-brawlers-for-beginners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/best-brawlers-for-beginners"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-trivia-tipps"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-trivia-tips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-trivia-tips"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/brawl-stars-update</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/brawl-stars-update"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/brawl-stars-update"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/new-brawler-2026</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/neuer-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/new-brawler-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/new-brawler-2026"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/classic-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/classic-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/classic-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/pixel-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/pixel-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/pixel-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/emoji-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/emoji-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/emoji-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/description-mode-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/description-mode-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/description-mode-guide"/>
+  </url>
+  <url>
+    <loc>https://brawlmystery.pages.dev/it/strategie/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/strategien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/estrategias/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/strategie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brawlmystery.pages.dev/en/strategies/"/>
+  </url>
+
   <!-- Legal -->
   <url>
     <loc>https://brawlmystery.pages.dev/impressum.html</loc>
