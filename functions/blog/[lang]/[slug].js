@@ -113,7 +113,6 @@ function renderHTML(post, lang, m) {
   <\/script>
 
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005" crossorigin="anonymous"><\/script>
 
   <!-- BrawlMystery Fonts & Base Styles -->
   <link rel="stylesheet" href="/css/style.css">
@@ -225,9 +224,6 @@ function renderHTML(post, lang, m) {
     .post-body a:hover { text-decoration: underline; }
     .post-body hr  { border: none; border-top: 1px solid rgba(138,43,226,0.25); margin: 2rem 0; }
 
-    /* ── Ad-Slots ── */
-    .ad-slot { margin: 20px 0; }
-
     /* ── Back-Button ── */
     .back-btn {
       display: inline-flex;
@@ -298,13 +294,6 @@ function renderHTML(post, lang, m) {
       <!-- Excerpt -->
       ${post.excerpt ? `<p class="post-excerpt" itemprop="description">${esc(post.excerpt)}</p>` : ''}
 
-      <!-- Ad oben -->
-      <div class="ad-slot">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-             data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-      </div>
-
       <hr class="post-divider">
 
       <!-- Artikel-Inhalt -->
@@ -313,13 +302,6 @@ function renderHTML(post, lang, m) {
       </div>
 
       <hr class="post-divider">
-
-      <!-- Ad unten -->
-      <div class="ad-slot">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-             data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-      </div>
 
       <!-- CTA-Buttons -->
       <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; align-items:center;">
@@ -445,7 +427,7 @@ export async function onRequestGet({ params }) {
   return new Response(renderHTML(post, lang, m), {
     headers: {
       'Content-Type':  'text/html; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+      'Cache-Control': 'public, max-age=600, s-maxage=1800',
     },
   });
 }
