@@ -1,6 +1,6 @@
 // ── Cloudflare Pages Function ─────────────────────────────────────
 // Route: /blog/[lang]/[slug]
-// Server-Side Rendered Blog-Post-Seite für SEO + AdSense
+// Server-Side Rendered Blog-Post-Seite – BrawlMystery Style
 // ─────────────────────────────────────────────────────────────────
 
 const API     = 'https://webcontrol-hq-api.karol-paschek.workers.dev';
@@ -8,41 +8,50 @@ const SITE_ID = 'brawlmystery';
 
 const LANG_META = {
   de: { home:'/de/', blogHome:'/blog/', locale:'de_DE',
-        readMore:'Mehr Artikel',      notFound:'Artikel nicht gefunden.',
+        back:'Zurück zum Spiel', backBlog:'← Blog',
+        readMore:'Mehr Artikel', notFound:'Artikel nicht gefunden.',
         notFoundSub:'Dieser Artikel existiert nicht oder wurde entfernt.',
-        siteName:'BrawlMystery' },
+        siteName:'BrawlMystery', play:'🎮 Jetzt spielen →' },
   en: { home:'/en/', blogHome:'/blog/', locale:'en_US',
-        readMore:'More Articles',     notFound:'Article not found.',
+        back:'Back to Game', backBlog:'← Blog',
+        readMore:'More Articles', notFound:'Article not found.',
         notFoundSub:'This article does not exist or has been removed.',
-        siteName:'BrawlMystery' },
+        siteName:'BrawlMystery', play:'🎮 Play now →' },
   fr: { home:'/fr/', blogHome:'/blog/', locale:'fr_FR',
-        readMore:"Plus d'articles",   notFound:'Article introuvable.',
+        back:'Retour au jeu', backBlog:'← Blog',
+        readMore:"Plus d'articles", notFound:'Article introuvable.',
         notFoundSub:"Cet article n'existe pas ou a \u00e9t\u00e9 supprim\u00e9.",
-        siteName:'BrawlMystery' },
+        siteName:'BrawlMystery', play:'🎮 Jouer →' },
   es: { home:'/es/', blogHome:'/blog/', locale:'es_ES',
+        back:'Volver al juego', backBlog:'← Blog',
         readMore:'M\u00e1s art\u00edculos', notFound:'Art\u00edculo no encontrado.',
         notFoundSub:'Este art\u00edculo no existe o ha sido eliminado.',
-        siteName:'BrawlMystery' },
+        siteName:'BrawlMystery', play:'🎮 Jugar →' },
   it: { home:'/it/', blogHome:'/blog/', locale:'it_IT',
-        readMore:'Altri articoli',    notFound:'Articolo non trovato.',
+        back:'Torna al gioco', backBlog:'← Blog',
+        readMore:'Altri articoli', notFound:'Articolo non trovato.',
         notFoundSub:"Questo articolo non esiste o \u00e8 stato rimosso.",
-        siteName:'BrawlMystery' },
+        siteName:'BrawlMystery', play:'🎮 Gioca →' },
 };
 
 function fmtDate(d, lang) {
   const loc = { de:'de-DE', en:'en-GB', fr:'fr-FR', es:'es-ES', it:'it-IT' };
-  return new Date(d).toLocaleDateString(loc[lang]||'en-GB', { year:'numeric', month:'long', day:'numeric' });
+  return new Date(d).toLocaleDateString(loc[lang]||'en-GB',
+    { year:'numeric', month:'long', day:'numeric' });
 }
 
 function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return String(s||'')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+/* ── Haupt-HTML ── */
 function renderHTML(post, lang, m) {
-  const tags       = (post.tags||'').split(',').map(t=>t.trim()).filter(Boolean);
-  const dateStr    = fmtDate(post.created_at, lang);
+  const tags        = (post.tags||'').split(',').map(t=>t.trim()).filter(Boolean);
+  const dateStr     = fmtDate(post.created_at, lang);
   const description = post.excerpt || post.title;
-  const canonical  = `https://brawlmystery.pages.dev/blog/${lang}/${post.slug}`;
+  const canonical   = `https://brawlmystery.pages.dev/blog/${lang}/${post.slug}`;
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -86,7 +95,7 @@ function renderHTML(post, lang, m) {
     "image": "https://brawlmystery.pages.dev/assets/og-image.svg",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "${canonical}" }
   }
-  </script>
+  <\/script>
 
   <script type="application/ld+json">
   {
@@ -101,125 +110,252 @@ function renderHTML(post, lang, m) {
         "item": "${canonical}" }
     ]
   }
-  </script>
+  <\/script>
 
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005" crossorigin="anonymous"><\/script>
+
+  <!-- BrawlMystery Fonts & Base Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/seo-pages.css">
 
   <style>
-    :root { --bg:#1a1a2e; --surface:#0f0f1e; --accent:#f97316;
-            --text1:#f1f1f1; --text2:#a1a1aa; --border:rgba(249,115,22,0.25); }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-           background:var(--bg); color:var(--text1); min-height:100vh; }
+    /* ── CSS-Variablen ── */
+    :root {
+      --accent: #ffd700;
+      --text-primary: #ffffff;
+      --text-secondary: rgba(255,255,255,0.65);
+      --font-headline: 'BrawlStarsHeadline','Impact','Arial Black',sans-serif;
+    }
 
-    header { background:var(--surface); border-bottom:1px solid var(--border);
-             padding:14px 24px; display:flex; align-items:center; justify-content:space-between; }
-    .logo  { font-size:20px; font-weight:800; color:var(--accent); text-decoration:none; }
-    .back-link { color:var(--text2); text-decoration:none; font-size:14px; transition:color .2s; }
-    .back-link:hover { color:var(--accent); }
+    /* ── Guide-Body: dunkle Box wie Index ── */
+    .guide-body-wrap {
+      background: rgba(20,20,40,0.85);
+      border-radius: 16px;
+      padding: 28px 24px 32px;
+      border: 2px solid rgba(138,43,226,0.4);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      margin-top: 8px;
+    }
 
-    .post-page  { max-width:760px; margin:0 auto; padding:2rem 1.5rem 4rem; }
-    .post-nav   { display:flex; align-items:center; justify-content:space-between;
-                  flex-wrap:wrap; gap:10px; margin-bottom:2rem; }
-    .post-nav a { color:var(--text2); text-decoration:none; font-size:14px; transition:color .2s; }
-    .post-nav a:hover { color:var(--accent); }
-    .post-meta  { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:1rem; }
-    .post-tag   { font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px;
-                  background:rgba(249,115,22,.18); color:#fb923c;
-                  text-decoration:none; }
-    .post-tag:hover { background:rgba(249,115,22,.28); }
-    .post-date  { font-size:13px; color:var(--text2); }
-    .post-title { font-size:clamp(1.6rem,4vw,2.2rem); font-weight:800; line-height:1.25;
-                  margin:0 0 1rem; }
-    .post-excerpt { font-size:1.05rem; color:var(--text2); line-height:1.7;
-                    border-left:3px solid var(--accent); padding-left:1rem; margin-bottom:2rem; }
-    .post-body  { font-size:1rem; line-height:1.8; color:var(--text2); }
-    .post-body h2 { font-size:1.4rem; font-weight:700; color:var(--text1); margin:2rem 0 .75rem; }
-    .post-body h3 { font-size:1.15rem; font-weight:700; color:var(--text1); margin:1.5rem 0 .5rem; }
-    .post-body p  { margin-bottom:1.1rem; }
-    .post-body ul, .post-body ol { padding-left:1.4rem; margin-bottom:1.1rem; }
-    .post-body li { margin-bottom:.4rem; }
-    .post-body strong { color:var(--text1); }
-    .post-body a      { color:var(--accent); }
-    .post-body hr     { border:none; border-top:1px solid var(--border); margin:2rem 0; }
-    .divider    { border:none; border-top:1px solid var(--border); margin:2.5rem 0; }
-    .ad-slot    { margin:2rem 0; text-align:center; min-height:90px; }
-    .back-btn   { display:inline-flex; align-items:center; gap:6px; margin-top:2.5rem;
-                  padding:10px 20px; border-radius:8px;
-                  background:rgba(249,115,22,.12); color:var(--accent);
-                  text-decoration:none; font-weight:600; font-size:14px; transition:background .2s; }
-    .back-btn:hover { background:rgba(249,115,22,.22); }
+    /* ── Post-Header ── */
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
 
-    footer { text-align:center; padding:28px 24px; color:var(--text2); font-size:13px;
-             border-top:1px solid var(--border); margin-top:48px; }
-    footer a { color:var(--text2); text-decoration:none; }
-    footer a:hover { color:var(--accent); }
-    .sep { margin:0 8px; }
+    .post-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: rgba(255,215,0,0.12);
+      color: #ffd700;
+      border: 1px solid rgba(255,215,0,0.25);
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .post-tag:hover { background: rgba(255,215,0,0.22); }
+
+    .post-date {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .post-title {
+      font-family: 'BrawlStarsHeadline','Impact','Arial Black',sans-serif;
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 900;
+      color: #ffd700;
+      line-height: 1.25;
+      margin: 0 0 10px;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.7);
+    }
+
+    /* ── Excerpt (Blockquote-Stil) ── */
+    .post-excerpt {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+      border-left: 3px solid rgba(138,43,226,0.6);
+      padding-left: 14px;
+      margin: 0 0 24px;
+    }
+
+    /* ── Trennlinie ── */
+    .post-divider {
+      border: none;
+      border-top: 1px solid rgba(138,43,226,0.25);
+      margin: 24px 0;
+    }
+
+    /* ── Artikel-Body ── */
+    .post-body {
+      font-family: 'BrawlStarsText','Segoe UI',sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+    }
+    .post-body h2 {
+      font-family: 'BrawlStarsHeadline','Impact','Arial Black',sans-serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffd700;
+      margin: 2rem 0 0.7rem;
+      border-bottom: 1px solid rgba(255,215,0,0.2);
+      padding-bottom: 5px;
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+    }
+    .post-body h3 {
+      font-family: 'BrawlStarsText','Segoe UI',sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .post-body p   { margin-bottom: 1rem; }
+    .post-body ul,
+    .post-body ol  { padding-left: 1.4rem; margin-bottom: 1rem; }
+    .post-body li  { margin-bottom: 0.4rem; }
+    .post-body strong { color: #ffffff; }
+    .post-body a   { color: #ffd700; text-decoration: none; }
+    .post-body a:hover { text-decoration: underline; }
+    .post-body hr  { border: none; border-top: 1px solid rgba(138,43,226,0.25); margin: 2rem 0; }
+
+    /* ── Ad-Slots ── */
+    .ad-slot { margin: 20px 0; }
+
+    /* ── Back-Button ── */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: rgba(255,215,0,0.1);
+      border: 1px solid rgba(255,215,0,0.35);
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: background .2s, border-color .2s;
+    }
+    .back-btn:hover {
+      background: rgba(255,215,0,0.2);
+      border-color: rgba(255,215,0,0.6);
+      text-decoration: none;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      max-width: 800px;
+      margin: 20px auto 0;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <a href="${m.home}" class="logo">\u2694\ufe0f BrawlMystery</a>
-  <a href="${m.blogHome}" class="back-link">\u2190 Blog</a>
-</header>
-
-<article class="post-page" itemscope itemtype="https://schema.org/Article">
-
-  <nav class="post-nav" aria-label="Breadcrumb">
-    <a href="${m.home}">BrawlMystery</a>
-    <a href="${m.blogHome}">\u2190 Blog</a>
+  <!-- Sprach-Navigation (Pill) -->
+  <nav class="language-selector">
+    <div class="language-selector-inner">
+      <a href="/de/" class="lang-link${lang==='de'?' active':''}" title="Deutsch">&#127465;&#127466; DE</a>
+      <a href="/en/" class="lang-link${lang==='en'?' active':''}" title="English">&#127468;&#127463; EN</a>
+      <a href="/fr/" class="lang-link${lang==='fr'?' active':''}" title="Fran\u00e7ais">&#127467;&#127479; FR</a>
+      <a href="/es/" class="lang-link${lang==='es'?' active':''}" title="Espa\u00f1ol">&#127466;&#127480; ES</a>
+      <a href="/it/" class="lang-link${lang==='it'?' active':''}" title="Italiano">&#127470;&#127481; IT</a>
+    </div>
   </nav>
 
-  <header>
-    <div class="post-meta">
-      ${tags.map(t => `<a href="${m.blogHome}?tag=${encodeURIComponent(t)}" class="post-tag">${esc(t)}</a>`).join('')}
-      <time class="post-date" itemprop="datePublished" datetime="${post.created_at}">${dateStr}</time>
+  <article class="guide-container" itemscope itemtype="https://schema.org/Article">
+
+    <!-- Zurück-Leiste -->
+    <div class="back-bar">
+      <a href="${m.blogHome}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>${m.backBlog}</span>
+      </a>
     </div>
-    <h1 class="post-title" itemprop="headline">${esc(post.title)}</h1>
-    ${post.excerpt ? `<p class="post-excerpt" itemprop="description">${esc(post.excerpt)}</p>` : ''}
-  </header>
 
-  <div class="ad-slot">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-         data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-  </div>
+    <div class="guide-body-wrap">
 
-  <hr class="divider">
+      <!-- Meta: Tags + Datum -->
+      <div class="post-meta">
+        ${tags.map(t => `<a href="${m.blogHome}?tag=${encodeURIComponent(t)}" class="post-tag">${esc(t)}</a>`).join('')}
+        <time class="post-date" itemprop="datePublished" datetime="${post.created_at}">${dateStr}</time>
+      </div>
 
-  <div class="post-body" itemprop="articleBody">
-    ${post.content || `<p>${esc(post.excerpt||'')}</p>`}
-  </div>
+      <!-- Titel -->
+      <h1 class="post-title" itemprop="headline">${esc(post.title)}</h1>
 
-  <hr class="divider">
+      <!-- Excerpt -->
+      ${post.excerpt ? `<p class="post-excerpt" itemprop="description">${esc(post.excerpt)}</p>` : ''}
 
-  <div class="ad-slot">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-         data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-  </div>
+      <!-- Ad oben -->
+      <div class="ad-slot">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
+             data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
+      </div>
 
-  <a href="${m.blogHome}" class="back-btn">\u2190 ${m.readMore}</a>
+      <hr class="post-divider">
 
-</article>
+      <!-- Artikel-Inhalt -->
+      <div class="post-body" itemprop="articleBody">
+        ${post.content || `<p>${esc(post.excerpt||'')}</p>`}
+      </div>
 
-<footer>
-  <a href="${m.home}">BrawlMystery</a>
-  <span class="sep">\u00b7</span>
-  <a href="/blog/">Blog</a>
-  <span class="sep">\u00b7</span>
-  <a href="/impressum.html">Impressum</a>
-  <span class="sep">\u00b7</span>
-  <a href="/datenschutz.html">Datenschutz</a>
-  <p style="margin-top:10px">\u00a9 2026 BrawlMystery</p>
-</footer>
+      <hr class="post-divider">
+
+      <!-- Ad unten -->
+      <div class="ad-slot">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
+             data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
+      </div>
+
+      <!-- CTA-Buttons -->
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; align-items:center;">
+        <a href="${m.blogHome}" class="back-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          ${m.readMore}
+        </a>
+        <a href="${m.home}" class="back-btn" style="background:rgba(138,43,226,0.15);border-color:rgba(138,43,226,0.5);color:#bb86fc;">
+          ${m.play}
+        </a>
+      </div>
+
+    </div><!-- /.guide-body-wrap -->
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="${m.home}" class="footer-link">Spiel</a>
+    <span class="footer-separator">\u00b7</span>
+    <a href="/blog/" class="footer-link">Blog</a>
+    <span class="footer-separator">\u00b7</span>
+    <a href="/impressum.html" class="footer-link">Impressum</a>
+    <span class="footer-separator">\u00b7</span>
+    <a href="/datenschutz.html" class="footer-link">Datenschutz</a>
+  </footer>
+
+  <script src="/js/ui.js" defer><\/script>
 
 </body>
 </html>`;
 }
 
+/* ── 404-Seite ── */
 function render404(lang, m) {
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -228,25 +364,57 @@ function render404(lang, m) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 \u2013 BrawlMystery Blog</title>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/seo-pages.css">
   <style>
-    body { font-family:-apple-system,sans-serif; background:#1a1a2e; color:#f1f1f1; display:flex; align-items:center; justify-content:center; min-height:100vh; }
-    .wrap { max-width:500px; text-align:center; padding:2rem; }
-    h1 { font-size:2rem; font-weight:800; margin-bottom:1rem; color:#f97316; }
-    p  { color:#a1a1aa; margin-bottom:2rem; }
-    a  { display:inline-block; padding:10px 24px; border-radius:8px;
-         background:rgba(249,115,22,.12); color:#f97316; text-decoration:none; font-weight:600; }
+    :root { --accent:#ffd700; --text-primary:#ffffff; --text-secondary:rgba(255,255,255,0.65); }
+    .guide-body-wrap {
+      background: rgba(20,20,40,0.85);
+      border: 2px solid rgba(138,43,226,0.4);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .not-found-icon { font-size: 3rem; margin-bottom: 16px; text-align: center; }
+    .not-found-title { font-family:'BrawlStarsHeadline','Impact',sans-serif; color:#ffd700; font-size:1.6rem; text-align:center; margin-bottom:10px; }
+    .not-found-sub { color:rgba(255,255,255,0.5); font-size:0.9rem; text-align:center; margin-bottom:24px; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>404 \u2013 ${m.notFound}</h1>
-    <p>${m.notFoundSub}</p>
-    <a href="${m.blogHome}">\u2190 ${m.readMore}</a>
+  <nav class="language-selector">
+    <div class="language-selector-inner">
+      <a href="/de/" class="lang-link">&#127465;&#127466; DE</a>
+      <a href="/en/" class="lang-link">&#127468;&#127463; EN</a>
+      <a href="/fr/" class="lang-link">&#127467;&#127479; FR</a>
+      <a href="/es/" class="lang-link">&#127466;&#127480; ES</a>
+      <a href="/it/" class="lang-link">&#127470;&#127481; IT</a>
+    </div>
+  </nav>
+  <div class="guide-container">
+    <div class="back-bar">
+      <a href="${m.blogHome}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>${m.backBlog}</span>
+      </a>
+    </div>
+    <div class="guide-body-wrap">
+      <div class="not-found-icon">&#128680;</div>
+      <h1 class="not-found-title">404 \u2013 ${m.notFound}</h1>
+      <p class="not-found-sub">${m.notFoundSub}</p>
+      <div style="text-align:center;">
+        <a href="${m.blogHome}" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.35);color:#ffd700;text-decoration:none;font-weight:600;font-size:0.88rem;">
+          \u2190 ${m.readMore}
+        </a>
+      </div>
+    </div>
   </div>
+  <script src="/js/ui.js" defer><\/script>
 </body>
 </html>`;
 }
 
+/* ── Request Handler ── */
 export async function onRequestGet({ params }) {
   const { lang, slug } = params;
   const VALID = ['de', 'en', 'fr', 'es', 'it'];
