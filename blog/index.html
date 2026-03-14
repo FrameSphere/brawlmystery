@@ -1,266 +1,370 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | BrawlMystery</title>
-  <meta name="description" content="BrawlMystery Blog – Guides, Tipps und News rund um Brawl Stars.">
-  <link rel="canonical" href="https://brawlmystery.pages.dev/blog/">
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005" crossorigin="anonymous"></script>
-  <style>
-    :root {
-      --bg:      #1a1a2e;
-      --surface: #0f0f1e;
-      --accent:  #f97316;
-      --text1:   #f1f1f1;
-      --text2:   #a1a1aa;
-      --border:  rgba(249,115,22,0.25);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-           background: var(--bg); color: var(--text1); min-height: 100vh; }
-
-    header { background: var(--surface); border-bottom: 1px solid var(--border);
-             padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-size: 20px; font-weight: 800; color: var(--accent); text-decoration: none; }
-    .header-right { display: flex; align-items: center; gap: 16px; }
-    .back-link { color: var(--text2); text-decoration: none; font-size: 14px; transition: color .2s; }
-    .back-link:hover { color: var(--accent); }
-    .lang-select { background: transparent; border: 1px solid var(--border); color: var(--text2);
-                   padding: 4px 8px; border-radius: 6px; font-size: 13px; cursor: pointer; font-family: inherit; }
-    .lang-select option { background: #1a1a2e; }
-
-    .hero { text-align: center; padding: 48px 24px 28px;
-            background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%); }
-    .hero h1 { font-size: 32px; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
-    .hero p  { color: var(--text2); font-size: 15px; }
-
-    .filters { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
-               padding: 16px 24px; max-width: 900px; margin: 0 auto; }
-    .filter-btn { padding: 7px 18px; border-radius: 20px; border: 1px solid var(--border);
-                  background: var(--surface); color: var(--text2); font-size: 13px;
-                  cursor: pointer; transition: all .2s; font-family: inherit; }
-    .filter-btn:hover  { border-color: var(--accent); color: var(--text1); }
-    .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-    main { max-width: 900px; margin: 0 auto; padding: 24px; }
-    #blog-loading, #blog-error, #blog-empty { text-align: center; padding: 64px 24px;
-                                              color: var(--text2); font-size: 15px; }
-    .posts-grid { display: flex; flex-direction: column; gap: 20px; }
-    .post-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-                 padding: 22px 26px; transition: border-color .2s, transform .2s;
-                 text-decoration: none; color: inherit; display: block; }
-    .post-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .post-meta    { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-    .post-tag     { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px;
-                    background: rgba(249,115,22,.18); color: #fb923c; }
-    .post-date    { font-size: 12px; color: var(--text2); }
-    .post-title   { font-size: 19px; font-weight: 700; margin-bottom: 6px; line-height: 1.35; }
-    .post-excerpt { font-size: 14px; color: var(--text2); line-height: 1.65; }
-
-    .ad-slot { margin: 20px 0; text-align: center; min-height: 90px; }
-
-    footer { text-align: center; padding: 28px 24px; color: var(--text2); font-size: 13px;
-             border-top: 1px solid var(--border); margin-top: 48px; }
-    footer a { color: var(--text2); text-decoration: none; }
-    footer a:hover { color: var(--accent); }
-    .sep { margin: 0 8px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog – BrawlMystery | Guides, Tipps & News</title>
+    <meta name="description" content="Der offizielle BrawlMystery Blog: Brawl Stars Guides, Tipps, Strategien und News – in Deutsch, Englisch, Französisch, Spanisch und Italienisch.">
+    <link rel="canonical" href="https://brawlmystery.pages.dev/blog/">
+    <link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/">
+    <link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/">
+    <link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/">
+    <link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/">
+    <link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/">
+    <meta property="og:title" content="Blog – BrawlMystery">
+    <meta property="og:description" content="Guides, Tipps & News rund um BrawlMystery und Brawl Stars.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brawlmystery.pages.dev/blog/">
+    <meta property="og:site_name" content="BrawlMystery">
+    <meta property="og:image" content="https://brawlmystery.pages.dev/assets/og-image.svg">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3654554314003005" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/seo-pages.css">
+    <style>
+        /* ── Blog-specific additions ── */
+        .blog-filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .blog-filter-btn {
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            background: rgba(0,0,0,0.3);
+            color: rgba(255,255,255,0.55);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all .2s;
+            font-family: inherit;
+        }
+        .blog-filter-btn:hover {
+            border-color: var(--accent, #ffd700);
+            color: var(--accent, #ffd700);
+        }
+        .blog-filter-btn.active {
+            background: rgba(255,215,0,0.15);
+            border-color: var(--accent, #ffd700);
+            color: var(--accent, #ffd700);
+            font-weight: 700;
+        }
+        .blog-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .blog-card {
+            display: block;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 18px 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color .2s, background .2s, transform .15s;
+        }
+        .blog-card:hover {
+            border-color: rgba(255,215,0,0.45);
+            background: rgba(255,215,0,0.04);
+            transform: translateY(-2px);
+        }
+        .blog-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 7px;
+        }
+        .blog-card-tag {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 9px;
+            border-radius: 20px;
+            background: rgba(255,215,0,0.12);
+            color: #ffd700;
+        }
+        .blog-card-date {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            font-family: 'Space Mono', monospace;
+        }
+        .blog-card-lang {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.45);
+        }
+        .blog-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.92);
+            margin-bottom: 5px;
+            line-height: 1.35;
+        }
+        .blog-card-excerpt {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.6;
+        }
+        #blog-loading, #blog-error, #blog-empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+        }
+        .ad-slot { margin: 20px 0; text-align: center; }
+    </style>
 </head>
 <body>
-
-<header>
-  <a href="/de/" class="logo">⚔️ BrawlMystery</a>
-  <div class="header-right">
-    <select class="lang-select" id="langSelect" onchange="setLang(this.value)">
-      <option value="de">🇩🇪 DE</option>
-      <option value="en">🇬🇧 EN</option>
-      <option value="fr">🇫🇷 FR</option>
-      <option value="es">🇪🇸 ES</option>
-      <option value="it">🇮🇹 IT</option>
-    </select>
-    <a href="/de/" class="back-link" id="back-link">← Zum Spiel</a>
-  </div>
-</header>
-
-<div class="hero">
-  <h1>📝 Blog</h1>
-  <p id="hero-sub">Guides, Tipps &amp; News rund um BrawlMystery</p>
-</div>
-
-<div class="filters" id="filters">
-  <button class="filter-btn active" data-tag="all" id="filter-all">Alle</button>
-</div>
-
-<main>
-  <div class="ad-slot">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-         data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <div id="blog-loading">Lädt Artikel…</div>
-  <div id="blog-error"   style="display:none"></div>
-  <div id="blog-empty"   style="display:none"></div>
-  <div id="posts-grid"   class="posts-grid" style="display:none"></div>
-</main>
-
-<footer>
-  <a href="/de/" id="footer-home">BrawlMystery</a>
-  <span class="sep">·</span>
-  <a href="/impressum.html">Impressum</a>
-  <span class="sep">·</span>
-  <a href="/datenschutz.html">Datenschutz</a>
-  <p style="margin-top:10px">© 2026 BrawlMystery</p>
-</footer>
-
-<script>
-(function () {
-  const API     = 'https://webcontrol-hq-api.karol-paschek.workers.dev';
-  const SITE_ID = 'brawlmystery';
-
-  const T = {
-    de: { backLink:'← Zum Spiel',     heroSub:'Guides, Tipps & News rund um BrawlMystery',
-          filterAll:'Alle',   loading:'Lädt Artikel…',   error:'Fehler beim Laden.',
-          empty:'Noch keine Artikel – komm bald wieder!', testHome:'/de/' },
-    en: { backLink:'← Back to Game',  heroSub:'Guides, tips & news about BrawlMystery',
-          filterAll:'All',    loading:'Loading articles…', error:'Failed to load.',
-          empty:'No articles yet – check back soon!',      testHome:'/en/' },
-    fr: { backLink:'← Retour au jeu', heroSub:'Guides, astuces & actualités BrawlMystery',
-          filterAll:'Tous',   loading:'Chargement…',     error:'Erreur de chargement.',
-          empty:'Aucun article pour l\'instant – revenez bientôt !', testHome:'/fr/' },
-    es: { backLink:'← Volver',        heroSub:'Guías, consejos & noticias de BrawlMystery',
-          filterAll:'Todos',  loading:'Cargando…',       error:'Error al cargar.',
-          empty:'No hay artículos aún – ¡vuelve pronto!', testHome:'/es/' },
-    it: { backLink:'← Torna al gioco',heroSub:'Guide, consigli & notizie su BrawlMystery',
-          filterAll:'Tutti',  loading:'Caricamento…',    error:'Errore nel caricamento.',
-          empty:'Nessun articolo ancora – torna presto!', testHome:'/it/' },
-  };
-
-  function detectLang() {
-    const stored = localStorage.getItem('bm_lang');
-    if (stored && T[stored]) return stored;
-    const nav = (navigator.language || '').slice(0,2).toLowerCase();
-    return T[nav] ? nav : 'de';
-  }
-
-  let lang     = detectLang();
-  let allPosts = [];
-
-  function applyTranslations() {
-    const t = T[lang];
-    document.documentElement.lang = lang;
-    document.getElementById('back-link').textContent   = t.backLink;
-    document.getElementById('back-link').href          = t.testHome;
-    document.getElementById('footer-home').href        = t.testHome;
-    document.getElementById('hero-sub').textContent    = t.heroSub;
-    document.getElementById('filter-all').textContent  = t.filterAll;
-    document.getElementById('blog-loading').textContent = t.loading;
-    document.getElementById('blog-error').textContent  = t.error;
-    document.getElementById('blog-empty').textContent  = t.empty;
-    document.getElementById('langSelect').value        = lang;
-  }
-
-  window.setLang = function(l) {
-    if (!T[l]) return;
-    lang = l;
-    localStorage.setItem('bm_lang', l);
-    applyTranslations();
-    loadPosts();
-  };
-
-  function esc(s) {
-    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  }
-  function fmtDate(d) {
-    const loc = { de:'de-DE', en:'en-GB', fr:'fr-FR', es:'es-ES', it:'it-IT' };
-    return new Date(d).toLocaleDateString(loc[lang]||'en-GB', { year:'numeric', month:'long', day:'numeric' });
-  }
-
-  function renderPosts(tag) {
-    const grid  = document.getElementById('posts-grid');
-    const empty = document.getElementById('blog-empty');
-    const langPosts = allPosts.filter(p => (p.lang || 'de') === lang);
-    const filtered  = tag === 'all' ? langPosts : langPosts.filter(p => p.tags && p.tags.includes(tag));
-    if (!filtered.length) { grid.style.display='none'; empty.style.display=''; return; }
-    empty.style.display = 'none';
-    grid.style.display  = '';
-    grid.innerHTML = filtered.map(p => {
-      const slug = p.slug || '';
-      const href = slug ? `/blog/${lang}/${esc(slug)}` : '#';
-      return `<a class="post-card" href="${href}">
-        <div class="post-meta">
-          ${(p.tags||'').split(',').map(t=>t.trim()).filter(Boolean).map(t=>`<span class="post-tag">${esc(t)}</span>`).join('')}
-          <span class="post-date">${fmtDate(p.created_at)}</span>
+    <nav class="language-selector">
+        <div class="language-selector-inner">
+            <a href="/de/" class="lang-link" id="lnk-de" title="Deutsch">🇩🇪 DE</a>
+            <a href="/en/" class="lang-link" id="lnk-en" title="English">🇬🇧 EN</a>
+            <a href="/fr/" class="lang-link" id="lnk-fr" title="Français">🇫🇷 FR</a>
+            <a href="/es/" class="lang-link" id="lnk-es" title="Español">🇪🇸 ES</a>
+            <a href="/it/" class="lang-link" id="lnk-it" title="Italiano">🇮🇹 IT</a>
         </div>
-        <div class="post-title">${esc(p.title)}</div>
-        ${p.excerpt ? `<div class="post-excerpt">${esc(p.excerpt)}</div>` : ''}
-      </a>`;
-    }).join('');
-  }
+    </nav>
 
-  function buildTagFilters() {
-    const tagSet = new Set();
-    allPosts.forEach(p => {
-      (p.tags||'').split(',').forEach(t => { const s=t.trim(); if(s) tagSet.add(s); });
-    });
-    const container = document.getElementById('filters');
-    container.querySelectorAll('.filter-btn:not([data-tag="all"])').forEach(b => b.remove());
-    tagSet.forEach(tag => {
-      const btn = document.createElement('button');
-      btn.className   = 'filter-btn';
-      btn.dataset.tag = tag;
-      btn.textContent = tag;
-      btn.addEventListener('click', () => {
-        container.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        renderPosts(tag);
-      });
-      container.appendChild(btn);
-    });
-    document.getElementById('filter-all').addEventListener('click', function() {
-      container.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-      this.classList.add('active');
-      renderPosts('all');
-    });
-  }
+    <div class="guide-container">
+        <div class="back-bar">
+            <a href="/de/" id="back-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span id="back-text">Zurück zum Spiel</span>
+            </a>
+        </div>
 
-  async function loadPosts() {
-    document.getElementById('blog-loading').style.display = '';
-    document.getElementById('blog-error').style.display   = 'none';
-    document.getElementById('blog-empty').style.display   = 'none';
-    document.getElementById('posts-grid').style.display   = 'none';
-    try {
-      const res = await fetch(`${API}/api/blog/published?site_id=${SITE_ID}`);
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      allPosts = await res.json();
-      document.getElementById('blog-loading').style.display = 'none';
-      if (!allPosts.length) { document.getElementById('blog-empty').style.display=''; return; }
-      buildTagFilters();
-      renderPosts('all');
-    } catch(e) {
-      document.getElementById('blog-loading').style.display = 'none';
-      document.getElementById('blog-error').style.display   = '';
-    }
-  }
+        <div class="guide-body-wrap">
+            <h1 id="page-title">📝 Blog</h1>
+            <p class="guide-meta" id="page-sub">Guides, Tipps &amp; News rund um BrawlMystery</p>
 
-  applyTranslations();
-  loadPosts();
+            <div class="ad-slot">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
+                     data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
 
-  // ── Error-Tracking ────────────────────────────────────────────────
-  function sendError(type, message, stack) {
-    fetch(API + '/api/errors', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ site_id: SITE_ID, error_type: type,
-        message: String(message).slice(0,500), stack: stack||null, path: window.location.pathname }),
-    }).catch(() => {});
-  }
-  window.addEventListener('error', e => sendError('RuntimeError', e.message, e.error?.stack));
-  window.addEventListener('unhandledrejection', e =>
-    sendError('UnhandledRejection', e.reason ? String(e.reason) : 'Unhandled rejection', null));
-})();
-</script>
+            <!-- Tag filter -->
+            <div class="blog-filters" id="blog-filters">
+                <button class="blog-filter-btn active" data-tag="all" id="filter-all">Alle</button>
+            </div>
+
+            <!-- Posts -->
+            <div id="blog-loading">Lädt Artikel…</div>
+            <div id="blog-error"  style="display:none">Fehler beim Laden – bitte später erneut versuchen.</div>
+            <div id="blog-empty" style="display:none">Noch keine Artikel veröffentlicht – komm bald wieder!</div>
+            <div id="blog-grid" class="blog-grid" style="display:none"></div>
+
+            <div class="ad-slot" style="margin-top:28px">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
+                     data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <div style="margin-top:28px;text-align:center">
+                <a href="/de/" id="cta-btn" class="seo-link-btn" style="font-size:1rem;padding:12px 24px">🎮 Zum Spiel →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" style="margin-top:0">
+        <a href="/de/" id="footer-home" class="footer-link">Spiel</a>
+        <span class="footer-separator">·</span>
+        <a href="/blog/" class="footer-link">Blog</a>
+        <span class="footer-separator">·</span>
+        <a href="/impressum.html" class="footer-link">Impressum</a>
+        <span class="footer-separator">·</span>
+        <a href="/datenschutz.html" class="footer-link">Datenschutz</a>
+    </footer>
+
+    <script src="../js/ui.js" defer></script>
+    <script>
+    (function () {
+        const API     = 'https://webcontrol-hq-api.karol-paschek.workers.dev';
+        const SITE_ID = 'brawlmystery';
+
+        const T = {
+            de: { back:'Zurück zum Spiel', home:'/de/', title:'📝 Blog',
+                  sub:'Guides, Tipps & News rund um BrawlMystery',
+                  filterAll:'Alle', loading:'Lädt Artikel…',
+                  error:'Fehler beim Laden – bitte später erneut versuchen.',
+                  empty:'Noch keine Artikel – komm bald wieder!', cta:'🎮 Zum Spiel →' },
+            en: { back:'Back to Game', home:'/en/', title:'📝 Blog',
+                  sub:'Guides, tips & news about BrawlMystery',
+                  filterAll:'All', loading:'Loading articles…',
+                  error:'Failed to load – please try again later.',
+                  empty:'No articles yet – check back soon!', cta:'🎮 Play now →' },
+            fr: { back:'Retour au jeu', home:'/fr/', title:'📝 Blog',
+                  sub:'Guides, astuces & actualités BrawlMystery',
+                  filterAll:'Tous', loading:'Chargement…',
+                  error:'Erreur de chargement – réessayez plus tard.',
+                  empty:'Aucun article pour l\'instant – revenez bientôt !', cta:'🎮 Jouer →' },
+            es: { back:'Volver al juego', home:'/es/', title:'📝 Blog',
+                  sub:'Guías, consejos & noticias de BrawlMystery',
+                  filterAll:'Todos', loading:'Cargando…',
+                  error:'Error al cargar – inténtalo más tarde.',
+                  empty:'No hay artículos aún – ¡vuelve pronto!', cta:'🎮 Jugar →' },
+            it: { back:'Torna al gioco', home:'/it/', title:'📝 Blog',
+                  sub:'Guide, consigli & notizie su BrawlMystery',
+                  filterAll:'Tutti', loading:'Caricamento…',
+                  error:'Errore nel caricamento – riprova più tardi.',
+                  empty:'Nessun articolo ancora – torna presto!', cta:'🎮 Gioca →' },
+        };
+
+        const LANG_FLAGS = { de:'🇩🇪', en:'🇬🇧', fr:'🇫🇷', es:'🇪🇸', it:'🇮🇹' };
+
+        function detectLang() {
+            const stored = localStorage.getItem('bm_lang');
+            if (stored && T[stored]) return stored;
+            const nav = (navigator.language || '').slice(0, 2).toLowerCase();
+            return T[nav] ? nav : 'de';
+        }
+
+        let lang     = detectLang();
+        let allPosts = [];
+
+        function applyUI() {
+            const t = T[lang];
+            document.documentElement.lang = lang;
+            document.getElementById('back-link').href     = t.home;
+            document.getElementById('back-text').textContent = t.back;
+            document.getElementById('footer-home').href   = t.home;
+            document.getElementById('cta-btn').href       = t.home;
+            document.getElementById('cta-btn').textContent = t.cta;
+            document.getElementById('page-title').textContent = t.title;
+            document.getElementById('page-sub').textContent   = t.sub;
+            document.getElementById('filter-all').textContent = t.filterAll;
+            document.getElementById('blog-loading').textContent = t.loading;
+            document.getElementById('blog-error').textContent   = t.error;
+            document.getElementById('blog-empty').textContent   = t.empty;
+            // Active lang link
+            document.querySelectorAll('.lang-link').forEach(a => a.classList.remove('active'));
+            const active = document.getElementById('lnk-' + lang);
+            if (active) active.classList.add('active');
+        }
+
+        function esc(s) {
+            return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+        function fmtDate(d) {
+            const loc = { de:'de-DE', en:'en-GB', fr:'fr-FR', es:'es-ES', it:'it-IT' };
+            return new Date(d).toLocaleDateString(loc[lang] || 'en-GB',
+                { year:'numeric', month:'short', day:'numeric' });
+        }
+
+        function renderPosts(tag) {
+            const grid  = document.getElementById('blog-grid');
+            const empty = document.getElementById('blog-empty');
+            const langPosts = allPosts.filter(p => (p.lang || 'de') === lang);
+            const filtered  = tag === 'all'
+                ? langPosts
+                : langPosts.filter(p => p.tags && p.tags.includes(tag));
+
+            if (!filtered.length) { grid.style.display='none'; empty.style.display=''; return; }
+            empty.style.display = 'none';
+            grid.style.display  = '';
+
+            grid.innerHTML = filtered.map(p => {
+                const slug = p.slug || '';
+                const href = slug ? `/blog/${lang}/${esc(slug)}` : '#';
+                const tags = (p.tags || '').split(',').map(t => t.trim()).filter(Boolean);
+                const flag = LANG_FLAGS[p.lang] || '';
+                return `<a class="blog-card" href="${href}">
+                    <div class="blog-card-meta">
+                        ${tags.map(t => `<span class="blog-card-tag">${esc(t)}</span>`).join('')}
+                        ${flag ? `<span class="blog-card-lang">${flag} ${(p.lang||'').toUpperCase()}</span>` : ''}
+                        <span class="blog-card-date">${fmtDate(p.created_at)}</span>
+                    </div>
+                    <div class="blog-card-title">${esc(p.title)}</div>
+                    ${p.excerpt ? `<div class="blog-card-excerpt">${esc(p.excerpt)}</div>` : ''}
+                </a>`;
+            }).join('');
+        }
+
+        function buildTagFilters() {
+            const tagSet = new Set();
+            allPosts.forEach(p => {
+                (p.tags || '').split(',').forEach(t => { const s = t.trim(); if (s) tagSet.add(s); });
+            });
+            const container = document.getElementById('blog-filters');
+            container.querySelectorAll('.blog-filter-btn:not([data-tag="all"])').forEach(b => b.remove());
+            tagSet.forEach(tag => {
+                const btn = document.createElement('button');
+                btn.className   = 'blog-filter-btn';
+                btn.dataset.tag = tag;
+                btn.textContent = tag;
+                btn.addEventListener('click', () => {
+                    container.querySelectorAll('.blog-filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderPosts(tag);
+                });
+                container.appendChild(btn);
+            });
+            document.getElementById('filter-all').onclick = function () {
+                container.querySelectorAll('.blog-filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderPosts('all');
+            };
+        }
+
+        // Language switcher via lang links
+        document.querySelectorAll('.lang-link').forEach(a => {
+            a.addEventListener('click', function(e) {
+                // extract lang code from href like /de/
+                const m = this.href.match(/\/([a-z]{2})\//);
+                if (m && T[m[1]]) {
+                    localStorage.setItem('bm_lang', m[1]);
+                    lang = m[1];
+                    applyUI();
+                    renderPosts('all');
+                    document.querySelectorAll('.blog-filter-btn').forEach(b => b.classList.remove('active'));
+                    document.getElementById('filter-all').classList.add('active');
+                }
+                // don't prevent default – href navigates to /de/ etc. for the game
+                // but we want to stay on blog. Prevent nav and just switch lang.
+                e.preventDefault();
+            });
+        });
+
+        async function loadPosts() {
+            document.getElementById('blog-loading').style.display = '';
+            document.getElementById('blog-error').style.display   = 'none';
+            document.getElementById('blog-empty').style.display   = 'none';
+            document.getElementById('blog-grid').style.display    = 'none';
+            try {
+                const res = await fetch(`${API}/api/blog/published?site_id=${SITE_ID}`);
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                allPosts = await res.json();
+                document.getElementById('blog-loading').style.display = 'none';
+                if (!allPosts.length) { document.getElementById('blog-empty').style.display = ''; return; }
+                buildTagFilters();
+                renderPosts('all');
+            } catch (e) {
+                document.getElementById('blog-loading').style.display = 'none';
+                document.getElementById('blog-error').style.display   = '';
+            }
+        }
+
+        // ── Error tracking ──────────────────────────────────────────
+        function sendError(type, msg, stack) {
+            fetch(API + '/api/errors', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ site_id: SITE_ID, error_type: type,
+                    message: String(msg).slice(0, 500), stack: stack || null,
+                    path: window.location.pathname }),
+            }).catch(() => {});
+        }
+        window.addEventListener('error', e => sendError('RuntimeError', e.message, e.error?.stack));
+        window.addEventListener('unhandledrejection', e =>
+            sendError('UnhandledRejection', e.reason ? String(e.reason) : 'Rejection', null));
+
+        applyUI();
+        loadPosts();
+    })();
+    </script>
 </body>
 </html>
