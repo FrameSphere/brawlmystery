@@ -22,6 +22,40 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/seo-pages.css">
     <style>
+        /* ── CSS-Variablen (damit seo-pages.css korrekt rendert) ── */
+        :root {
+            --accent: #ffd700;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.65);
+            --font-headline: 'BrawlStarsHeadline', 'Impact', 'Arial Black', sans-serif;
+        }
+
+        /* ── Guide-Body Override: dunkel statt gläsern ── */
+        .guide-body-wrap {
+            background: rgba(20, 20, 40, 0.85);
+            border-radius: 16px;
+            padding: 28px 24px 32px;
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 8px;
+            /* kein backdrop-filter */
+        }
+
+        /* ── Seitentitel ── */
+        .guide-container h1 {
+            font-family: 'BrawlStarsHeadline', 'Impact', 'Arial Black', sans-serif;
+            color: #ffd700;
+            font-size: 1.7rem;
+            margin-bottom: 8px;
+        }
+
+        /* ── Meta-Zeile ── */
+        .guide-meta {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+
         /* ── Tag-Filter ── */
         .blog-filters {
             display: flex;
@@ -29,18 +63,24 @@
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
+
         .blog-filter-btn {
             padding: 5px 15px;
             border-radius: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             background: transparent;
             color: rgba(255, 255, 255, 0.5);
-            font-size: 13px;
+            font-size: 0.8rem;
+            font-family: 'BrawlStarsText', 'Segoe UI', sans-serif;
             cursor: pointer;
-            transition: all .2s;
-            font-family: inherit;
+            transition: border-color .2s, color .2s, background .2s;
         }
-        .blog-filter-btn:hover { border-color: #ffd700; color: #ffd700; }
+
+        .blog-filter-btn:hover {
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+
         .blog-filter-btn.active {
             background: rgba(255, 215, 0, 0.15);
             border-color: #ffd700;
@@ -48,26 +88,34 @@
             font-weight: 700;
         }
 
-        /* ── Post-Karten ── */
-        .blog-grid { display: flex; flex-direction: column; gap: 14px; }
+        /* ── Post-Grid ── */
+        .blog-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
+        /* ── Post-Karte: dunkel wie Index-Boxen ── */
         .blog-card {
             display: block;
             text-decoration: none;
             color: inherit;
             padding: 16px 18px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            background: rgba(0, 0, 0, 0.35);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            transition: border-color .2s, background .2s, transform .15s;
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            background: rgba(20, 20, 40, 0.85);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: border-color .2s, background .2s, box-shadow .2s, transform .15s;
         }
+
         .blog-card:hover {
-            border-color: rgba(255, 215, 0, 0.5);
-            background: rgba(255, 215, 0, 0.06);
+            border-color: rgba(138, 43, 226, 0.75);
+            background: rgba(138, 43, 226, 0.2);
+            box-shadow: 0 6px 15px rgba(138, 43, 226, 0.35);
             transform: translateY(-2px);
         }
+
+        /* ── Karten-Meta (Tag / Datum / Sprache) ── */
         .blog-card-meta {
             display: flex;
             align-items: center;
@@ -75,47 +123,65 @@
             flex-wrap: wrap;
             margin-bottom: 7px;
         }
+
         .blog-card-tag {
-            font-size: 11px;
+            font-size: 0.7rem;
             font-weight: 700;
             padding: 2px 9px;
             border-radius: 20px;
             background: rgba(255, 215, 0, 0.12);
             color: #ffd700;
+            border: 1px solid rgba(255, 215, 0, 0.25);
         }
+
         .blog-card-date {
-            font-size: 12px;
+            font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.35);
         }
+
         .blog-card-lang {
-            font-size: 11px;
+            font-size: 0.7rem;
             padding: 2px 7px;
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.07);
             color: rgba(255, 255, 255, 0.4);
         }
+
+        /* ── Karten-Titel ── */
         .blog-card-title {
-            font-size: 15px;
+            font-family: 'BrawlStarsText', 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
             font-weight: 700;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 4px;
-            line-height: 1.35;
-        }
-        .blog-card-excerpt {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.5);
-            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 5px;
+            line-height: 1.4;
         }
 
-        #blog-loading, #blog-error, #blog-empty {
+        /* ── Karten-Vorschau ── */
+        .blog-card-excerpt {
+            font-family: 'BrawlStarsText', 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.65;
+        }
+
+        /* ── Status-Meldungen ── */
+        #blog-loading,
+        #blog-error,
+        #blog-empty {
             text-align: center;
             padding: 32px 16px;
             color: rgba(255, 255, 255, 0.4);
-            font-size: 14px;
+            font-size: 0.9rem;
         }
+
+        /* ── Ad-Abstand ── */
+        .blog-ad-top    { margin: 16px 0 20px; }
+        .blog-ad-bottom { margin: 24px 0 4px; }
     </style>
 </head>
 <body>
+    <!-- Sprachnavigation -->
     <nav class="language-selector">
         <div class="language-selector-inner">
             <a href="/de/" class="lang-link" id="lnk-de" title="Deutsch">🇩🇪 DE</a>
@@ -127,9 +193,13 @@
     </nav>
 
     <div class="guide-container">
+        <!-- Zurück-Leiste -->
         <div class="back-bar">
             <a href="/de/" id="back-link">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
                 <span id="back-text">Zurück zum Spiel</span>
             </a>
         </div>
@@ -138,34 +208,46 @@
             <h1 id="page-title">📝 Blog</h1>
             <p class="guide-meta" id="page-sub">Guides, Tipps &amp; News rund um BrawlMystery</p>
 
-            <div style="margin: 18px 0;">
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-                     data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <!-- Ad oben -->
+            <div class="blog-ad-top">
+                <ins class="adsbygoogle" style="display:block"
+                     data-ad-client="ca-pub-3654554314003005"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
+            <!-- Tag-Filter -->
             <div class="blog-filters" id="blog-filters">
                 <button class="blog-filter-btn active" data-tag="all" id="filter-all">Alle</button>
             </div>
 
+            <!-- Artikel-Liste -->
             <div id="blog-loading">Lädt Artikel…</div>
             <div id="blog-error"  style="display:none">Fehler beim Laden – bitte später erneut versuchen.</div>
-            <div id="blog-empty" style="display:none">Noch keine Artikel – komm bald wieder!</div>
-            <div id="blog-grid" class="blog-grid" style="display:none"></div>
+            <div id="blog-empty"  style="display:none">Noch keine Artikel – komm bald wieder!</div>
+            <div id="blog-grid"   class="blog-grid" style="display:none"></div>
 
-            <div style="margin: 28px 0 4px;">
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3654554314003005"
-                     data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <!-- Ad unten -->
+            <div class="blog-ad-bottom">
+                <ins class="adsbygoogle" style="display:block"
+                     data-ad-client="ca-pub-3654554314003005"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
+            <!-- CTA -->
             <div style="margin-top: 28px; text-align: center;">
-                <a href="/de/" id="cta-btn" class="seo-link-btn" style="font-size:1rem; padding:12px 24px;">🎮 Jetzt spielen →</a>
+                <a href="/de/" id="cta-btn" class="seo-link-btn" style="font-size:1rem; padding:12px 28px;">🎮 Jetzt spielen →</a>
             </div>
-        </div>
-    </div>
+        </div><!-- /.guide-body-wrap -->
+    </div><!-- /.guide-container -->
 
-    <footer class="footer" style="margin-top:0;">
+    <!-- Footer -->
+    <footer class="footer" style="max-width:800px; margin:20px auto 0; border-radius:12px;">
         <a href="/de/" id="footer-home" class="footer-link">Spiel</a>
         <span class="footer-separator">·</span>
         <a href="/blog/" class="footer-link">Blog</a>
@@ -224,26 +306,27 @@
         function applyUI() {
             var t = T[lang];
             document.documentElement.lang = lang;
-            document.getElementById('back-link').href        = t.home;
-            document.getElementById('back-text').textContent = t.back;
-            document.getElementById('footer-home').href      = t.home;
-            document.getElementById('cta-btn').href          = t.home;
-            document.getElementById('cta-btn').textContent   = t.cta;
+            document.getElementById('back-link').href         = t.home;
+            document.getElementById('back-text').textContent  = t.back;
+            document.getElementById('footer-home').href       = t.home;
+            document.getElementById('cta-btn').href           = t.home;
+            document.getElementById('cta-btn').textContent    = t.cta;
             document.getElementById('page-title').textContent = t.title;
             document.getElementById('page-sub').textContent   = t.sub;
             document.getElementById('filter-all').textContent = t.filterAll;
             document.getElementById('blog-loading').textContent = t.loading;
             document.getElementById('blog-error').textContent   = t.error;
             document.getElementById('blog-empty').textContent   = t.empty;
-            // active lang indicator (slider via ui.js)
             document.querySelectorAll('.lang-link').forEach(function(a) { a.classList.remove('active'); });
             var lnk = document.getElementById('lnk-' + lang);
             if (lnk) lnk.classList.add('active');
         }
 
         function esc(s) {
-            return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+            return String(s || '')
+                .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         }
+
         function fmtDate(d) {
             var loc = { de:'de-DE', en:'en-GB', fr:'fr-FR', es:'es-ES', it:'it-IT' };
             return new Date(d).toLocaleDateString(loc[lang] || 'en-GB',
@@ -257,7 +340,11 @@
             var filtered  = tag === 'all' ? langPosts
                 : langPosts.filter(function(p){ return p.tags && p.tags.includes(tag); });
 
-            if (!filtered.length) { grid.style.display='none'; empty.style.display=''; return; }
+            if (!filtered.length) {
+                grid.style.display  = 'none';
+                empty.style.display = '';
+                return;
+            }
             empty.style.display = 'none';
             grid.style.display  = '';
 
@@ -269,7 +356,7 @@
                 return '<a class="blog-card" href="' + href + '">'
                     + '<div class="blog-card-meta">'
                     + tags.map(function(t){ return '<span class="blog-card-tag">' + esc(t) + '</span>'; }).join('')
-                    + (flag ? '<span class="blog-card-lang">' + flag + ' ' + (p.lang||'').toUpperCase() + '</span>' : '')
+                    + (flag ? '<span class="blog-card-lang">' + flag + ' ' + esc((p.lang||'').toUpperCase()) + '</span>' : '')
                     + '<span class="blog-card-date">' + fmtDate(p.created_at) + '</span>'
                     + '</div>'
                     + '<div class="blog-card-title">' + esc(p.title) + '</div>'
@@ -287,6 +374,7 @@
             });
             var container = document.getElementById('blog-filters');
             container.querySelectorAll('.blog-filter-btn:not([data-tag="all"])').forEach(function(b){ b.remove(); });
+
             tagSet.forEach(function(tag) {
                 var btn = document.createElement('button');
                 btn.className   = 'blog-filter-btn';
@@ -299,6 +387,7 @@
                 });
                 container.appendChild(btn);
             });
+
             document.getElementById('filter-all').onclick = function() {
                 container.querySelectorAll('.blog-filter-btn').forEach(function(b){ b.classList.remove('active'); });
                 this.classList.add('active');
@@ -306,7 +395,7 @@
             };
         }
 
-        // Sprach-Links: bleib auf Blog, wechsel nur die Sprache
+        /* Sprachlinks: Seite bleibt, nur Sprache wechselt */
         document.querySelectorAll('.lang-link').forEach(function(a) {
             a.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -333,27 +422,36 @@
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 allPosts = await res.json();
                 document.getElementById('blog-loading').style.display = 'none';
-                if (!allPosts.length) { document.getElementById('blog-empty').style.display = ''; return; }
+                if (!allPosts.length) {
+                    document.getElementById('blog-empty').style.display = '';
+                    return;
+                }
                 buildTagFilters();
                 renderPosts('all');
-            } catch(e) {
+            } catch (e) {
                 document.getElementById('blog-loading').style.display = 'none';
                 document.getElementById('blog-error').style.display   = '';
             }
         }
 
-        // Error-Tracking
+        /* Error-Tracking */
         function sendError(type, msg, stack) {
             fetch(API + '/api/errors', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ site_id: SITE_ID, error_type: type,
+                body: JSON.stringify({
+                    site_id: SITE_ID, error_type: type,
                     message: String(msg).slice(0, 500), stack: stack || null,
-                    path: window.location.pathname })
+                    path: window.location.pathname
+                })
             }).catch(function(){});
         }
-        window.addEventListener('error', function(e){ sendError('RuntimeError', e.message, e.error && e.error.stack); });
-        window.addEventListener('unhandledrejection', function(e){ sendError('UnhandledRejection', e.reason ? String(e.reason) : 'Rejection', null); });
+        window.addEventListener('error', function(e){
+            sendError('RuntimeError', e.message, e.error && e.error.stack);
+        });
+        window.addEventListener('unhandledrejection', function(e){
+            sendError('UnhandledRejection', e.reason ? String(e.reason) : 'Rejection', null);
+        });
 
         applyUI();
         loadPosts();
