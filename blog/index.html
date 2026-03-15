@@ -347,7 +347,7 @@
                     + '<div class="blog-card-meta">'
                     + tags.map(function(t){ return '<span class="blog-card-tag">' + esc(t) + '</span>'; }).join('')
                     + (flag ? '<span class="blog-card-lang">' + flag + ' ' + esc((p.lang||'').toUpperCase()) + '</span>' : '')
-                    + '<span class="blog-card-date">' + fmtDate(p.created_at) + '</span>'
+                    + '<span class="blog-card-date">' + fmtDate(p.published_at || p.created_at) + '</span>'
                     + '</div>'
                     + '<div class="blog-card-title">' + esc(p.title) + '</div>'
                     + (p.excerpt ? '<div class="blog-card-excerpt">' + esc(p.excerpt) + '</div>' : '')
