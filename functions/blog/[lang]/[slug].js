@@ -143,11 +143,6 @@ function renderHTML(post, lang, m, siblings) {
   <title>${esc(post.title)} \u2013 BrawlMystery Blog</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${canonical}">
-  <link rel="alternate" hreflang="de" href="https://brawlmystery.pages.dev/de/">
-  <link rel="alternate" hreflang="en" href="https://brawlmystery.pages.dev/en/">
-  <link rel="alternate" hreflang="fr" href="https://brawlmystery.pages.dev/fr/">
-  <link rel="alternate" hreflang="es" href="https://brawlmystery.pages.dev/es/">
-  <link rel="alternate" hreflang="it" href="https://brawlmystery.pages.dev/it/">
 
   <meta property="og:type"         content="article">
   <meta property="og:title"        content="${esc(post.title)}">
