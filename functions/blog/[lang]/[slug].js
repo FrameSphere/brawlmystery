@@ -124,7 +124,7 @@ function sendFeedback(helpful){
 function renderHTML(post, lang, m, siblings) {
   const tags        = (post.tags||'').split(',').map(t=>t.trim()).filter(Boolean);
   const dateStr     = fmtDate(post.published_at || post.created_at, lang);
-  const description = post.excerpt || post.title;
+  const description = post.meta_description || post.excerpt || post.title;
   const canonical   = `https://brawlmystery.pages.dev/blog/${lang}/${post.slug}`;
   const BASE = 'https://brawlmystery.pages.dev';
   const hreflangs = siblings.map(s =>
@@ -142,6 +142,7 @@ function renderHTML(post, lang, m, siblings) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(post.title)} \u2013 BrawlMystery Blog</title>
   <meta name="description" content="${esc(description)}">
+  ${post.meta_keywords ? `<meta name="keywords" content="${esc(post.meta_keywords)}">` : ''}
   <link rel="canonical" href="${canonical}">
 
   <meta property="og:type"         content="article">
