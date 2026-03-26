@@ -121,10 +121,38 @@ function sendFeedback(helpful){
 }
 
 /* ── Haupt-HTML ── */
+// Normalize meta_keywords or longtail_keywords (array or JSON-string or plain string) → array of strings
+function parseKwField(raw) {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw.filter(Boolean).map(k => k.trim());
+  if (typeof raw === 'string') {
+    var s = raw.trim();
+    if (s.charAt(0) === '[') {
+      try { var arr = JSON.parse(s); return arr.filter(Boolean).map(k => k.trim()); } catch(e) {}
+    }
+    // Komma-getrennte Short-Keywords
+    return s.split(',').map(k => k.trim()).filter(Boolean);
+  }
+  return [];
+}
+
+// Kombiniert Short-Keywords + Long-Tail-Keywords zu einem meta-keywords String
+// Short-Keywords kommen zuerst, dann Long-Tails (beides dedupliziert)
+function getKwString(raw, rawLongtail) {
+  var shorts = parseKwField(raw);
+  var longs  = parseKwField(rawLongtail);
+  // Dedup: Long-Tails überspringen die exakt schon als Short enthalten sind
+  var seen   = new Set(shorts.map(function(k){ return k.toLowerCase(); }));
+  var deduped = longs.filter(function(k){ return !seen.has(k.toLowerCase()); });
+  var all = shorts.concat(deduped);
+  return all.join(', ');
+}
+
 function renderHTML(post, lang, m, siblings) {
   const tags        = (post.tags||'').split(',').map(t=>t.trim()).filter(Boolean);
   const dateStr     = fmtDate(post.published_at || post.created_at, lang);
   const description = post.meta_description || post.excerpt || post.title;
+  const kwString    = getKwString(post.meta_keywords, post.longtail_keywords);
   const canonical   = `https://brawlmystery.pages.dev/blog/${lang}/${post.slug}`;
   const BASE = 'https://brawlmystery.pages.dev';
   const hreflangs = siblings.map(s =>
@@ -142,7 +170,7 @@ function renderHTML(post, lang, m, siblings) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(post.title)} \u2013 BrawlMystery Blog</title>
   <meta name="description" content="${esc(description)}">
-  ${post.meta_keywords ? `<meta name="keywords" content="${esc(post.meta_keywords)}">` : ''}
+  ${kwString ? `<meta name="keywords" content="${esc(kwString)}">` : ''}
   <link rel="canonical" href="${canonical}">
 
   <meta property="og:type"         content="article">
